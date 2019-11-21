@@ -1,0 +1,59 @@
+body{
+
+font-family: "Garamond" sans-serif ;
+}
+
+
+.top{
+    
+    font-family:"Garamond";
+    text-align: left;
+    font-size: 100%;
+    font-weight: italic;
+    color: dimgrey;
+    padding: 0 1em 0 1em;
+        
+}
+small{
+    padding:;
+    margin:0;
+}
+#contact{
+    
+    text-align: right;
+    
+}
+#contact p{
+    float: right;
+    padding: 1em;
+}
+#NavBar{
+    margin: 0;
+    border-top: 1px solid #999999;
+      border-bottom: 1px solid #999999;
+}
+#NavBar a:link{
+    color: grey;
+    padding: 1em;
+    padding-left:  0px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#NavBar a:visited{
+    color:gray;
+}
+#NavBar a:hover{
+    color:goldenrod;
+   
+    
+}
+#NavBar ul li{
+    display: inline;
+    list-style: none;
+}
+.bodypart{
+    
+    text-align: center;
+    color: gray;
+    padding: 1em 4em;
+}
