@@ -14,6 +14,16 @@ font-family: "Garamond" sans-serif ;
     padding: 0 1em 0 1em;
         
 }
+header {
+	border-bottom: 0 solid #000; 
+}
+header > h1 {
+	display: inline-block;
+    color: #383939; 
+}
+header span {
+	margin-left: 650px; 
+}
 small{
     padding:;
     margin:0;
