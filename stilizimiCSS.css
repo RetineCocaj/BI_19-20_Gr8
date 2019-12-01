@@ -28,6 +28,10 @@ header span {
 	margin-left:0;
    	font-size:0.9em;
 }
+#mydiv {
+  font-variant-caps:titling-caps;
+  font-size: 2em; 
+  }
 #contact{
     
     text-align: right;
@@ -67,6 +71,7 @@ header span {
     color: gray;
     padding: 1em 4em;
      border-bottom:1px solid gray;
+     font-style: italic;
 }
 .firstpart{
     padding: 20px 20px 0 20px;
@@ -106,7 +111,19 @@ header span {
     clear:both;
     line-height:1.6em;
 }
-
+#container #thirdpart  a: link{
+	 color: grey;
+    padding: 1em;
+    padding-left:  0px;
+    text-decoration: none;
+    
+}
+#container #thirdpart a:visited{
+    color:gray;
+}
+#container #thirdpart a:hover{
+    color:goldenrod;   
+}
 
 .figs3{
     display:block; 
@@ -125,6 +142,8 @@ header span {
   width: 25%;
   margin:0px;
   padding:0px;
+  background-color: #242524;
+  color:white;
    
 }
 ul{
@@ -135,4 +154,42 @@ ul{
   content: "";
   display: table;
   clear: both;
+}
+#StaySocial a:link{
+    color: grey;
+    padding: 1em;
+    padding-left:  0px;
+    text-decoration: none;
+}
+#StaySocial a:visited{
+    color:gray;
+}
+#StaySocial a:hover{
+    color:goldenrod;   
+}
+#FromBlock a:link{
+    color: grey;
+    padding: 1em;
+    padding-left:  0px;
+    text-decoration: none;
+}
+
+#FromBlock a:visited{
+    color:gray;
+}
+#FromBlock a:hover{
+    color:goldenrod;   
+}
+
+#ContactDetails a:link{
+    color: grey;
+    padding: 1em;
+    padding-left:  0px;
+    text-decoration: none;
+}
+#ContactDetails a:visited{
+    color:gray;
+}
+#ContactDetails a:hover{
+    color:goldenrod;   
 }
