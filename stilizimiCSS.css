@@ -16,17 +16,17 @@ font-family: "Garamond" sans-serif ;
 }
 header {
 	border-bottom: 0 solid #000; 
+	padding-bottom: 45px;
+	
+	
 }
 header > h1 {
 	display: inline-block;
     color: #383939; 
 }
 header span {
-	margin-left: 650px; 
-}
-small{
-    padding:;
-    margin:0;
+	margin-left:0;
+   	font-size:0.9em;
 }
 #contact{
     
