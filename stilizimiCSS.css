@@ -128,14 +128,49 @@ header span {
 .figs3{
     display:block; 
     float:left; 
-    margin:0 20px 0 40px ;
+    margin:0 30px 0 40px ;
     width:300px;
 }
 
 #container .readmore{
     text-align:right;
 }
-    
+   
+#Img #Indonecteus
+{
+	 border-bottom: 1px solid #999999;
+	 padding-top:125px;
+	
+}
+#Img figure
+{
+	display:inline-block;	
+}
+
+#shkrimi #About
+{
+	
+	 border-bottom: 1px solid #999999;
+	 padding:0;
+
+}
+#shkrimi figure 
+{
+	display:inline-block;	
+}
+#shkrimi a:link{
+    color: grey;
+    padding: 1em;
+    padding-left:  0px;
+    text-decoration: none;
+}
+#shkrimi a:visited{
+    color:gray;
+}
+#shkrimi a:hover{
+    color:goldenrod;   
+}
+
 .block{    
   
   float: left;
