@@ -73,6 +73,20 @@ header span {
      border-bottom:1px solid gray;
      font-style: italic;
 }
+
+.text
+{
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	font-style:italic;
+	height:125px;
+	text-align: center;
+	display:inline-block;
+	padding: 0 2.5em;
+	line-height: 25pt;
+	font-size:30px;
+	color: #333333;
+}
+
 .firstpart{
     padding: 20px 20px 0 20px;
     margin: 10px 10px 0 10px;
