@@ -226,11 +226,17 @@ nav ul{
     margin: 0px 0px 0px 20px;
 }
 
-#block2 ul a{
-    border-bottom: 1px solid grey;
+#block2 ul li{
+    border-bottom: 1px solid dimgrey;
     margin: 5px;
-    padding: 20px 0px 0px 0px;
+    padding: 7px 7px 15px 7px;
+  
+}
+#block2 ul a{
+    margin: 5px;
+    padding: 0px 0px 10px 5px;
     text-decoration: none;
+  
 }
 #block2 ul a:visited{
     color:peru;
@@ -238,13 +244,39 @@ nav ul{
 
 #block3 ul a{
     text-align: right;
-    padding: 10px 0px 10px 150px;
+    padding: 10px 0px 10px 160px;
     margin: 5px;
     text-decoration: none;
    
 }
 #block3 ul a:visited{
  color:peru;
+}
+#block3 ul li{
+    margin: 5px 5px 5px 15px;
+}
+#block3 h2{
+    margin-left: 10px;
+}
+#submit{
+    color: white;
+    background-color: peru;
+    border-radius: 6px;
+   
+}
+input, text{
+    padding: 5px;
+    border-radius: 5px;
+    background-color : #404241; 
+    border:none;
+
+}
+input, textarea{
+    
+     padding: 5px;
+    border-radius: 5px;
+    background-color : #404241; 
+    border:none;
 }
 #StaySocial a:link{
     color: grey;
