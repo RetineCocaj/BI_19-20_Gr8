@@ -41,35 +41,34 @@
 					</ul>
 	</div>
     </div>
-			  
-			  <div class="firstline">
+			<div class="firstline">
 			  <table class="table_1">
-			  
+			  <form action="/action_page.php">
 				<tr>
 				<td>
 				<h6>Please complete all required contact fields.</h6>
-				<em>*Required</em><hr>
+				<em style="color:#ee0000;">* Required</em><hr>
 				</td>
 				</tr>
-				<tr><td><label id="ContactName">Contact Name </br><input type="text" name="title" id="title" class="required hilightable"></label>
+				<tr><td><label id="ContactName">Contact Name <span class="field_required" style="color:#ee0000;">*</span></br><input type="text" name="title" id="title" class="required hilightable" required ></label>
 				<p>
-				<label id="label">Management Company &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Bussines Name</br>
-				<input type="text" name="title" id="title1" class="required hilightable" ><input type="text" name="title" id="title1" class="required hilightable" ></label></p>
+				<label id="label">Management Company <span class="field_required" style="color:#ee0000;">*</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Bussines Name <span class="field_required" style="color:#ee0000;">*</span></br>
+				<input type="text" name="title" id="title1" class="required hilightable" required ><input type="text" name="title" id="title1" class="required hilightable"  required ></label></p>
 				</td></tr>
 			     
 				 <tr>
 				 <td>
 				 <h2>Property Adress</h2><hr>
-				 <label id="PropertyAdress">Property Adress </br><input type="text" name="title" id="title" class="required hilightable"></label>
+				 <label id="PropertyAdress">Property Adress <span class="field_required" style="color:#ee0000;">*</span></br><input type="text" name="title" id="title" class="required hilightable" required ></label>
 				 </td>
 				 </tr>
 				 <tr>
 				<td>
                    <p>
-                    <label id="label">City &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&nbsp;&nbsp;State
-					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;Zip Code
+                    <label id="label">City <span class="field_required" style="color:#ee0000;">*</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;State
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Zip Code<span class="field_required" style="color:#ee0000;">*</span>
 					</br>
-					  <input type="text" name="title" id="title2" class="required hilightable"></label>
+					  <input type="text" name="title" id="title2" class="required hilightable"  required ></label>
 					 <label id="State">
                      <select name="State" name="title2" class="formControl" id="state" required="required">
 										<option value="Alabama"  ="Alabama">Alabama</option>
@@ -96,16 +95,17 @@
 							</select>
                                                 
 					</label>
-					 <input type="text" name="title" id="title2" class="required hilightable"></label>
+					 <input type="text" name="title" id="title2" class="required hilightable"  required ></label>
 				     </p>
                                     </td>	
 									</tr>
 				<tr>
 				<td>
                    <div class="PhoneNumber">
-				    <label id="Phone">PhoneNumber</br><input type="text" name="title" id="title" class="required hilightable">
-					
-					
+				    <label id="Phone">PhoneNumber <span class="field_required" style="color:#ee0000;">*</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Fax &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Email <span class="field_required" style="color:#ee0000;">*</span></br>
+					<input  placeholder="123-45-678" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+					 <input  placeholder="123-45-678" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+					  <input type="text" name="title" id="title2" class="required hilightable"  required ></label>
 				   </div>
                    <hr> 
                  </td>				
@@ -118,21 +118,33 @@
 				
 				<tr>
 				<td>
-				<div id="Requested">
-				<h3>Requested </br>Services</h3>
-				 <div class="box">
-                      <p><input type="checkbox" name="cc[]" value="1" /> Wash exterior windows of building above </br> 1st floor, outside only</p>
-                       <input type="checkbox" name="cc[]" value="2" /> Wash exterior windows of buildingabove 1st floor, <br> inside only
-                                       
-                                        </div>
-										
+		
+				<div class="Services" >
+				  <div id="Requested">
+				<h3>Requested Services</h3>
+					<hr>
+					</div>
+					<div class="fieldwrp">
+					<label>
+                      <input type="checkbox" data-type="checkbox" name="cc[]" value="1" /> Wash exterior windows of building above 1st <br>floor, outside only                                  
+					</label>
+					<label>
+                     <input type="checkbox" data-type="checkbox" name="cc[]" value="2" /> Wash exterior windows of building above 1st<br> floor, inside only                 
+					</label></div> 
+						</div>
+					</td>
+					</tr>
+						
 					
-				</div>
-				</td>
+				<tr>
+					<td>
+						
+						<p><input id="submit" type="submit"></p>
+					</td>
 				</tr>
-				</table>
-				</div>
-				
+				</form>
+		</table>
+	</div>
 				<br><br>
 				<div id="Anash">
 				<h2>Contact<br> Information</h2><hr>
@@ -143,6 +155,7 @@
 				<b>Main Phone:</b> 312-573-3333 <br>
 				<b>Fax: </b> 312-573-5730</p>
 			    </div>
+				
 				
 				
 				
