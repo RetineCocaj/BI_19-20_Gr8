@@ -5,8 +5,8 @@ background-color:#D7D7D7;
 }
 
 .Margin{
-	margin-left:100px;
-    margin-right:100px;
+	margin-left:90px;
+    margin-right:90px;
     background-color:white;
 }
 
@@ -33,10 +33,12 @@ header > h1 {
 header span {
 	margin-left:0;
    	font-size:0.9em;
+	padding-left:10px;
 }
 #mydiv {
   font-variant-caps:titling-caps;
   font-size: 2em; 
+  padding-left:10px;
   }
 #contact{
     
@@ -230,7 +232,7 @@ nav ul{
  
 
 .firstline{
-    
+    line-height: 32px;
     margin: 10px ;
     padding:50px ; 	
 }
@@ -289,6 +291,9 @@ input[name="title"]{
 #title1 { width: 38%}
 #title2 { width: 22%}
 
+input:focus:required:invalid {
+   border: 2px solid red !important;
+}
 .Pare{
 	margin-left:50px;
 }
@@ -307,7 +312,7 @@ hr{
     font-weight: 400;
 }
  
- .firstline h3{
+.firstline h3{
 	style:bold;
 	margin-left:50px;
 	font-size: 41px;
@@ -315,8 +320,23 @@ hr{
     font-weight: 400;
 	padding:10px;
 }
+.checkbox{
+	line-height:32px;
+}
 .box {
-	margin-left:50px;	
+	margin-left:50px;
+    line-height:32px;	
+}
+input[type="tel"]{
+	margin-left: 50px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 16px;
+    height: 24px;
+	width:22%;
+    padding: 4px;
+    box-shadow: none;
+    background-color: transparent;
 }
 
 h4{
@@ -326,6 +346,31 @@ h4{
     line-height: 32px;
     font-weight: 400;
 	padding:10px;	
+}
+.fieldwrp label {
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+}
+.fieldwrp input {
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    margin:0;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+    overflow: hidden;
+
+}
+.firstline #submit{
+    color: white;
+    background-color: #FFA12B;
+	font-size:20px;
+    border-radius: 6px;
+	width:100px;
+	height:50px;
+    margin:50px;
 }
 
 #Anash p{
