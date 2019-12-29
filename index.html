@@ -27,7 +27,7 @@
 
 						<li> <a href="faqjaepare.html">Style Demo</a></li>
 
-						<li> <a href="#">Full Width</a></li>
+						<li> <a href="FullWidth">Full Width</a></li>
 
 						<li> <a href="#">Dropdown</a></li>
 
@@ -53,11 +53,90 @@
             erat. In fringilla massa ut nisi ullamcorper pellentesque„
         </p>
     
-          <section id="slider"><a href="#"><img src="p1.png" alt="" width="760px" height="320px"></a></section>  
+          <!--slider-->
 
+<div id="slider">
+	<div id="box">
+	<img src="a.jpg">
+	</div>
+	
+	<button class="prew" onclick="prewImage()"> < </button>
+	<button class="next" onclick="nextImage()"> > </button>
+</div>
+
+  <script type="text/javascript">
+
+  	var slider_content = document.getElementById('box');
+
+  	// contain images in an array
+    var image = ['a','b', 'c', 'd'];
+
+    var i = image.length;
+
+
+    // function for next slide 
+
+    function nextImage(){
+    	if (i<image.length) {
+    		i= i+1;
+    	}else{
+    		i = 1;
+    	}
+    	  slider_content.innerHTML = "<img src="+image[i-1]+".jpg>";
+    }
+
+
+    // function for prew slide
+
+    function prewImage(){
+
+    	if (i<image.length+1 && i>1) {
+    		i= i-1;
+    	}else{
+    		i = image.length;
+    	}
+    	  slider_content.innerHTML = "<img src="+image[i-1]+".jpg>";
+
+    }
+	<!--Pjesa e fotove me shkrim read more-->
+	function toggleText(btn, id){
+			var e = document.getElementById(id);
+			if(e.style.display == 'block'){
+				e.style.display='none';
+				btn.innerHTML="Read more &raquo;";
+			}
+			else {
+				e.style.display='block';
+				btn.innerHTML="Read less &raquo;";
+			}
+		}
+		
+		function toggleText1(btn, id){
+			var e = document.getElementById(id);
+			if(e.style.display == 'block'){
+				e.style.display='none';
+				btn.innerHTML="Read more &raquo;";
+			}
+			else {
+				e.style.display='block';
+				btn.innerHTML="Read less &raquo;";
+			}
+		}
+		function toggleText2(btn, id){
+			var e = document.getElementById(id);
+			if(e.style.display == 'block'){
+				e.style.display='none';
+				btn.innerHTML="Read more &raquo;";
+			}
+			else {
+				e.style.display='block';
+				btn.innerHTML="Read less &raquo;";
+			}
+		}
+
+  </script>
+			
     </div>
-   
-
   </div>
   <div id="container">
   <div id="thirdpart">
@@ -88,12 +167,12 @@
 	
 	 <section id="Img">
 	 <article class="Figurat">
-         <h3 id= "Indonecteus">Indoceteus facilis</h3>
+         <h3 class= "Indonecteus">Indoceteus facilis</h3><hr>
 		
-		 <figure><img src="p2.png" width="245" height="175" alt=""></figure>
-		 <figure><img src="p2.png" width="245" height="175" alt=""></figure>
-		 <figure><img src="p2.png" width="245" height="175" alt=""></figure>
-		 <figure><img src="p2.png" width="245" height="175" alt=""></figure>
+		 <figure><img src="1.jpg" width="195" height="175" alt=""></figure>
+		 <figure><img src="2.jpg" width="195" height="175" alt=""></figure>
+		 <figure><img src="3.jpg" width="195" height="175" alt=""></figure>
+		 <figure><img src="4.jpg" width="195" height="175" alt=""></figure>
 		 
 		 
         </section>
@@ -101,37 +180,46 @@
 	
 	<section id="shkrimi">
 		<article class="FigShkrim">
-         <h3 id= "About">AboutOurCompany</h3>
-		 
+         <h3 class= "About">AboutOurCompany</h3><hr>
 		  
-		 <figure><img src="p2.png" width="350" height="160" alt="">
+		 <figure><img src="Zucker.jpg" width="290" height="160" alt="">
 		 <figcaption><br>
-         <b>Name: &nbsp;</b>JanDoe <br><b>Position: &nbsp;</b> Boss
-		 <p>Vestibulumaccumsan egestibulam eu<br>
-		 justo convallis auque estas elit intesque sed.<br>
-		 Facilispede estibulum nuila orna nisl velit elit<br>
-		 ac aliquatnon tincidunt</p></figcaption>
-		 <p class="readmore"><a href="#">Read More &raquo;</a></p>
+         <b>Name: &nbsp;</b>Neal Zucker<br><b>Position: &nbsp;</b> President/ CEO
+		 
+		 <p>Neal Zucker is President and CEO <br> of Corporate Cleaning Services, Chicago’s <br>largest employer of union window washers.<br>
+		 Mr. Zucker started Corporate Cleaning <br>Services in 1994, and he manages all <br> aspects of the business on a daily basis,</p>
+		 
+		 <p id="more1" style="display: none;">from sales through operations. <br>In addition to his corporate work,<br> Mr. Zucker has held director, trustee <br>and advisory roles on many of Chicago’s <br>civic and not-for-profit organizations <br>for the past 25 years. Mr. Zucker was a <br>founder of the Junior Board of<br> the Young Leadership Division of <br>the Juvenile Diabetes Foundation</p>
+		 <a href="#" onclick="toggleText1(this, 'more1'); return false;">Read More &raquo;</a>
+		
+		 </figcaption>
 		 </figure>
 		 
-		 <figure><img src="p2.png" width="360" height="160" alt="">
+		  
+		 <figure><img src="Vanessa.png" width="290" height="160" alt="">
 		 <figcaption><br>
-         <b>Name: &nbsp;</b>JanDoe <br><b>Position: &nbsp;</b> Boss
-		 <p>Vestibulumaccumsan egestibulam eu<br>
-		 justo convallis auque estas elit intesque sed.<br>
-		 Facilispede estibulum nuila orna nisl velit elit<br>
-		 ac aliquatnon tincidunt</p></figcaption>
-		 <p class="readmore"><a href="#">Read More &raquo;</a></p>
-		 </figure> 
+         <b>Name: &nbsp;</b>Vanessa Herrera <br><b>Position: &nbsp;</b> Client Relations Manager
 		 
-		 <figure><img src="p2.png"width="350" height="160" alt="">
+		 <p>Vanessa joined the Corporate Cleaning <br> Services team in January 2015. With over <br> eight years 
+		 of office management and <br> customer service experience, 
+		 Vanessa is your <br>  first point of contact <br>at Corporate Cleaning Services. 
+		 </p>
+		 <p id="more" style="display: none;">While her main focus is building client relatio-<br>nships, Vanessa wears many hats. Some of her <br>responsibilities include; scheduling, fielding and <br>responding to client concerns, purchasing <br>and managing inventory,<br> human resources (maintaining personnel <br>files, new hire orientation), and carrying <br>administrative duties such as filing and <br>screening phone calls.</p>
+		 <a href="#" onclick="toggleText(this, 'more'); return false;">Read More &raquo;</a>
+		
+		 </figcaption>
+		 </figure>
+
+		 <figure><img src="Jeff.jpg" width="290" height="160" alt="">
 		 <figcaption><br>
-         <b>Name: &nbsp;</b>JanDoe <br><b>Position: &nbsp;</b> Boss
-		 <p>Vestibulumaccumsan egestibulam eu<br>
-		 justo convallis auque estas elit intesque sed.<br>
-		 Facilispede estibulum nuila orna nisl velit elit<br>
-		 ac aliquatnon tincidunt</p></figcaption>
-		 <p class="readmore"><a href="#">Read More &raquo;</a></p>
+         <b>Name: &nbsp;</b>Jeff Spino <br><b>Position: &nbsp;</b> Safety Director
+		 
+		 <p>Jeff is Corporate Cleaning Services’s<br> full-time Safety Director. He <br>brings 30 years of experience in different<br> areas of expertise, including <br> window washing, high-access rigging,<br> aerial lifts and fall protection.   
+		 </p>
+		 <p id="more2" style="display: none;">Jeff’s extensive knowledge makes him <br>the key team member to work progressively <br>on safety issues that may arise.<br> Jeff’s responsibilities – which include <br>conducting and providing feedback on <br>safety inspections, conducting roof plans<br> and providing consultative feedback<br> to our buildings and crews as necessary <br>– bring safety to the forefront of every job. </p>
+		 <a href="#" onclick="toggleText2(this, 'more2'); return false;">Read More &raquo;</a>
+		
+		 </figcaption>
 		 </figure>
 		 </article>
         </section>
