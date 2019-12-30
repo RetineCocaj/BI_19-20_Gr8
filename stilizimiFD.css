@@ -99,9 +99,7 @@ header span {
     padding: 20px 20px 0 20px;
     margin: 10px 10px 0 10px;
 }
-#slider{
-    margin:0;
-}
+
 #container #thirdpart{
     display:block; 
     width:100%; 
@@ -192,45 +190,7 @@ header span {
 #shkrimi a:hover{
     color:goldenrod;   
 }
-
-div.wrapper{
-    display:block; 
-    width:100%; 
-    height: 350px;
-    margin:1200px 0px 0px 0px; 
-    padding:0; 
-    text-align:left;
-    background-color:#333333;
-}
-
-nav ul{
-    margin:0; 
-    padding:0; 
-    list-style:none;
-}
-    
-
-.block{
-    
-    width:25%;
-    float:left;
-    text-align: left;
-    color: black;
-   
-}
-.block ul{
-    margin: 0;
-    padding:0;
-    list-style: none; 
-    color:darkgrey;
-}
-.block h2{
-    
-    color:whitesmoke;
-}
  
- 
-
 .firstline{
     line-height: 32px;
     margin: 10px ;
@@ -379,6 +339,47 @@ h4{
 	
 }
 
+div.wrapper{
+    display:block; 
+    width:100%; 
+    height: 360px;
+    margin:1200px 0px 0px 0px; 
+    padding:0; 
+    text-align:left;
+    background-color:#333333;
+}
+
+nav ul{
+    margin:0; 
+    padding:0; 
+    list-style:none;
+}
+    
+
+.block{
+    
+    width:25%;
+    float:left;
+    text-align: left;
+    color: black;
+   
+}
+
+.block a:link{
+color:peru;
+}
+
+.block ul{
+    margin: 0;
+    padding:0;
+    list-style: none; 
+    color:darkgrey;
+}
+.block h2{
+    
+    color:whitesmoke;
+}
+ 
 #footer{
     width: 100%;
     height: 300px;
@@ -421,10 +422,13 @@ h4{
     color: white;
     background-color: peru;
     border-radius: 6px;
+	width:30%;
+   text-transform:uppercase;
+	font-family:"Garamond";
    
 }
 #footer input[name="text1"]{
-
+    width:80%;
     padding: 5px;
     border-radius: 5px;
     background-color : #404241; 
@@ -432,7 +436,7 @@ h4{
 
 }
 input, textarea{
-    
+    width:80%;
      padding: 5px;
     border-radius: 5px;
     background-color : #404241; 
