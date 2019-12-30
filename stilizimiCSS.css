@@ -135,6 +135,7 @@ button{
 #container #thirdpart{
     display:block; 
     width:100%; 
+    margin-left:20px;
     }
 
 #container #thirdpart #services{
@@ -192,7 +193,13 @@ button{
 {        
 	line-height: 30pt;
 	
-	 padding-top:125px;
+	 padding-top:175px;
+	
+}
+.Indonecteus ,
+.About{
+	margin-bottom:0;
+ margin-left:45px;
 	
 }
 #Img figure
@@ -227,8 +234,8 @@ button{
 div.wrapper{
     display:block; 
     width:100%; 
-    height: 350px;
-    margin:200px 0px 0px 0px; 
+    height: 360px;
+    margin:30px 0px 0px 0px; 
     padding:0; 
     text-align:left;
     background-color:#333333;
@@ -249,6 +256,10 @@ nav ul{
     color: black;
    
 }
+.block a:link{
+	color:peru;
+}
+
 .block ul{
     margin: 0;
     padding:0;
@@ -301,9 +312,16 @@ nav ul{
     color: white;
     background-color: peru;
     border-radius: 6px;
-   
+   width:30%;
+	text-transform:uppercase;
+	font-family:"Garamond";
+}
+hr{
+	margin:10px 50px 50px 50px;
+    border-top: 1px solid #999999;	
 }
 input, text{
+	width:80%;
     padding: 5px;
     border-radius: 5px;
     background-color : #404241; 
@@ -311,7 +329,7 @@ input, text{
 
 }
 input, textarea{
-    
+    width:80%;
      padding: 5px;
     border-radius: 5px;
     background-color : #404241; 
