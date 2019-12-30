@@ -1,8 +1,14 @@
 body{
 
 font-family: "Garamond" sans-serif ;
+	background-color:#D7D7D7;
 }
 
+.Margin{
+	margin-left:90px;
+    margin-right:90px;
+	background-color:white;
+}
 
 .top{
     
@@ -27,10 +33,12 @@ header > h1 {
 header span {
 	margin-left:0;
    	font-size:0.9em;
+	padding-left:10px;  
 }
 #mydiv {
   font-variant-caps:titling-caps;
   font-size: 2em; 
+	padding-left:10px;  
   }
 #contact{
     
@@ -90,9 +98,6 @@ header span {
 .firstpart{
     padding: 20px 20px 0 20px;
     margin: 10px 10px 0 10px;
-}
-#slider{
-    margin:0;
 }
 #container #thirdpart{
     display:block; 
@@ -188,7 +193,7 @@ header span {
 div.wrapper{
     display:block; 
     width:100%; 
-    height: 350px;
+    height: 360px;
     margin:1200px 0px 0px 0px; 
     padding:0; 
     text-align:left;
@@ -210,6 +215,11 @@ nav ul{
     color: black;
    
 }
+
+.block a:link{
+color:peru;
+}
+
 .block ul{
     margin: 0;
     padding:0;
@@ -262,17 +272,19 @@ nav ul{
     color: white;
     background-color: peru;
     border-radius: 6px;
-   
+   	width:30%;
+	text-transform:uppercase;
+	font-family:"Garamond";
 }
 input, text{
     padding: 5px;
     border-radius: 5px;
     background-color : #404241; 
     border:none;
-
+	width:80%;
 }
 input, textarea{
-    
+    	width:80%;
      padding: 5px;
     border-radius: 5px;
     background-color : #404241; 
