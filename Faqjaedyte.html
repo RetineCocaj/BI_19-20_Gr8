@@ -188,10 +188,10 @@
       <nav>
                 <h2>Stay Social</h2>
                 <ul>
-                <li ><img src="H.jpg" width="25px"><a href="#">Get linked up in Linkeldn</a></li>
-                <li><img src="p1.png" width="25px"><a href="#">Keep up with our Tweets</a></li>
-                <li><img src="p1.png" width="25px"><a href="#">Photos on Pinterest</a></li>
-                <li><img src="H.jpg" width="25px"><a href="#">RSS Feed</a></li>
+                <li ><img src="H.jpg" width="25px"><a href="https://www.linkedin.com/" target="_blank">Get linked up in Linkeldn</a></li>
+                <li><img src="p1.png" width="25px"><a href="https://twitter.com/" target="_blank">Keep up with our Tweets</a></li>
+                <li><img src="p1.png" width="25px"><a href="https://www.pinterest.com/" target="_blank">Photos on Pinterest</a></li>
+                <li><img src="H.jpg" width="25px"><a href="https://rss.com/"  target="_blank">RSS Feed</a></li>
                 </ul></nav>
     </section>
    
@@ -201,14 +201,17 @@
                 <ul>
                 <li><strong>Blog Post Title</strong></li>
                 <li>Posted by Admin on 00.00.0000</li>
-                <li>vrvjdhsbc jdbhjsbby hdhdhgdhsud dgdydydu yuhyuhgsy dhdggdjsgd</li>
-                <li><a href="#">Read More &raquo;</a></li>
+                <li><p>vrvjdhsbc jdbhjsbby hdhdhgdhsud dgdydydu yuhyuhgsy dhdggdjsgd</p>
+				<p id="more0" style="display: none;">jszjckzx</p>
+				</li>
+                <li><a href="#" onclick="toggleText6(this, 'more0'); return false;">Read More &raquo;</a></li>
                 <li></li>
                 <li><strong>Blog Post Title</strong></li>
                 <li>Posted by Admin on 00.00.0000</li>
-                <li>vrvjdhsbc jdbhjsbby hdhdhgdhsud dgdydydu yuhyuhgsy dhdggdjsgd</li>
-                    
-                    <li><a href="#">Read More &raquo;</a></li></ul>
+                <li><p>vrvjdhsbc jdbhjsbby hdhdhgdhsud dgdydydu yuhyuhgsy dhdggdjsgd</p>
+				<p id="more01" style="display: none;">jszjckzx</p></li>
+                <li><a href="#" onclick="toggleText7(this, 'more01'); return false;">Read More &raquo;</a></li>
+		</ul>
       </nav>
     </section>
    
@@ -227,7 +230,31 @@
    
   </div>
 </div>
-
+<script type="text/javascript">
+<!--pjesa e footer-->
+		function toggleText6(btn, id){
+			var e = document.getElementById(id);
+			if(e.style.display == 'block'){
+				e.style.display='none';
+				btn.innerHTML="Read more &raquo;";
+			}
+			else {
+				e.style.display='block';
+				btn.innerHTML="Read less &raquo;";
+			}
+		}
+		function toggleText7(btn, id){
+			var e = document.getElementById(id);
+			if(e.style.display == 'block'){
+				e.style.display='none';
+				btn.innerHTML="Read more &raquo;";
+			}
+			else {
+				e.style.display='block';
+				btn.innerHTML="Read less &raquo;";
+			}
+		}
+		</script>
 
 </body>   
 </html>
