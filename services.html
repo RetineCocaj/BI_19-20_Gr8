@@ -133,6 +133,50 @@
         </div>
 
     </div>
+        <canvas id="canvas1"></canvas>
+        <canvas id="canvas2"></canvas>
+        <canvas id="canvas3"></canvas>
+
+    <script type="text/javascript">
+      var canvas = document.getElementById("canvas1");
+      var ctx1 = canvas.getContext("2d");
+        for (let i = 0; i < 50; i++) {
+     for (let j = 0; j < 50; j++) {
+    ctx1.fillStyle = `rgb(${i*10}, ${j * 5}, ${(200-(j*5))})`
+    ctx1.fillRect(j * 10, i * 10, 5, 5)
+   
+    var c = document.getElementById("canvas2");
+    var ctx2 = c.getContext("2d");
+
+
+ 
+         
+  }
+}// Create gradient
+    var grd = ctx2.createLinearGradient(80, 50, 200, 40);
+    grd.addColorStop(0, "#68b0f2");
+    grd.addColorStop(1, "#0231a1");
+
+    // Fill with gradient
+    ctx2.fillStyle = grd;
+    ctx2.fillRect(0, 0,1200,300);
+    ctx2.font = "12px Presley Slab";
+    ctx2.fillStyle = "black";
+    ctx2.fillText("Chicago's Leading Window Washing Company",30,80);  
+        
+      var canvas3 = document.getElementById('canvas1');
+      var context = canvas3.getContext('2d');
+      var imageObj = new Image();
+
+      imageObj.onload = function() {
+        context.drawImage(imageObj, 110, 0,80,150);
+      };
+      imageObj.src = "images/clean.png";
+   
+        
+       
+    
+</script>
 	
 <div class="wrapper row3">
   <div id="footer" class="clear">
@@ -162,10 +206,10 @@
       <nav>
                 <h2>Stay Social</h2>
                 <ul>
-                <li ><img src="linkedin.jpg" width="25px"><a href="#">Get linked up in Linkeldn</a></li>
-                <li><img src="twitter.png" width="25px"><a href="#">Keep up with our Tweets</a></li>
-                <li><img src="pinterest.png" width="25px"><a href="#">Photos on Pinterest</a></li>
-                <li><img src="rss.jpg" width="25px"><a href="#">RSS Feed</a></li>
+                <li ><img src="images/linkedin.jpg" width="25px"><a href="#">Get linked up in Linkeldn</a></li>
+                <li><img src="images/twitter.png" width="25px"><a href="#">Keep up with our Tweets</a></li>
+                <li><img src="images/pinterest.png" width="25px"><a href="#">Photos on Pinterest</a></li>
+                <li><img src="images/rss.jpg" width="25px"><a href="#">RSS Feed</a></li>
                 </ul></nav>
     </section>
    
@@ -203,6 +247,8 @@
 </div>
 
 	</div>
+
+  
 
 
 
