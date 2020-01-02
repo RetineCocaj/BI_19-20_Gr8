@@ -235,7 +235,7 @@ div.wrapper{
     display:block; 
     width:100%; 
     height: 350px;
-    margin:0px 0px 0px 0px; 
+    margin:250px 0px 0px 0px; 
     padding:0; 
     text-align:left;
     background-color:#333333;
@@ -590,4 +590,39 @@ input, textarea{
     height:250px;
     margin: 0px 45px;
     
+}
+.market_text{
+    width:250px;
+    float: left;
+    
+}
+.list{
+    width:250px;
+    float: left;
+    
+}
+.markets{
+    margin: 0px 50px 0px 100px;
+    width: 990px;
+    height: 160px;
+    border: 5px solid #76b8f5;
+    border-radius: 5px;
+    font-family: "Presley Slab", sans-serif;
+}
+#box1, #box2{
+    
+  width: 220px;
+  height: 100px;
+ 
+}
+.list ul li{
+    color: #1473c9;
+    padding: 5px;
+    padding-left: 7px;
+}
+.market_text h2{
+    font-size: 30px;
+    color: #074985;
+    padding-top: 5pxpx;
+    padding-left: 15px;
 }
