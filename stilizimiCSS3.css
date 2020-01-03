@@ -131,6 +131,10 @@ nav ul{
     color: black;
    
 }
+.block a:link{
+color:peru;
+}
+
 .block ul{
     margin: 0;
     padding:0;
