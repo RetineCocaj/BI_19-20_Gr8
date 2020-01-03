@@ -19,32 +19,24 @@
  	    </header>
        
       <div class="nav">
-		<div id="NavBar">
-
 					<ul>
 
-						<li> <a href="#">Homepage</a></li>
+						<li> <a href="index.html">Homepage</a></li>
 
-						<li> <a href="faqjaepare.html">Style Demo</a></li>
+						<li> <a href="StyleDemo.html">Style Demo</a></li>
 
-						<li> <a href="faqjaedyte.html">Full Width</a></li>
+						<li> <a href="FullWidth.html">Full Width</a></li>
 
-						<li> 
-                      <div class="dropdown">
-  <button class="dropbtn">About us</button>
-  <div class="dropdown-content">
-    <a href="services.html">Services</a>
-    <a href="#">Safety</a>
-    <a href="#">Who we serve</a>
-  </div>
-</div>
+						<li> <a href="Gallery.html">Gallery</a></li>
                         
-                        </li>
-
-						<li> <a href="#">Gallery</a></li>
-                        
-                  <li> <a href="#">Portofolio</a></li>
-                        
+                  <li> <a href="#">About Us</a>
+						<ul>
+						<li><a href="services.html">Service</li>
+						<li><a href="#">Safety</li>
+						<li><a href="#">Who we serve</li>
+						</ul> 
+				  </li>  
+				  
                   <li> <a href="#">Link text</a></li>
                         
                   <li> <a href="#">Link text</a></li>
@@ -54,7 +46,6 @@
 	
 
 	</div>
-    </div>
    <div class="w-washing">
        <div class="window_washing_text">
      <h2>Window Washing</h2>  
@@ -247,10 +238,10 @@
       <nav>
                 <h2>Stay Social</h2>
                 <ul>
-                <li ><img src="images/linkedin.jpg" width="25px"><a href="#">Get linked up in Linkeldn</a></li>
-                <li><img src="images/twitter.png" width="25px"><a href="#">Keep up with our Tweets</a></li>
-                <li><img src="images/pinterest.png" width="25px"><a href="#">Photos on Pinterest</a></li>
-                <li><img src="images/rss.jpg" width="25px"><a href="#">RSS Feed</a></li>
+               <li ><img src="linkedin.jpg" width="25px"><a href="https://www.linkedin.com/" target="_blank">Get linked up in Linkeldn</a></li>
+                <li><img src="twitter.png" width="25px"><a href="https://twitter.com/" target="_blank">Keep up with our Tweets</a></li>
+                <li><img src="pinterest.png" width="25px"><a href="https://www.pinterest.com/" target="_blank">Photos on Pinterest</a></li>
+                <li><img src="rss.jpg" width="25px"><a href="https://rss.com/"  target="_blank">RSS Feed</a></li>
                 </ul></nav>
     </section>
    
@@ -260,17 +251,18 @@
                 <ul>
                 <li><strong>Blog Post Title</strong></li>
                 <li>Posted by Admin on 00.00.0000</li>
-                <li>vrvjdhsbc jdbhjsbby hdhdhgdhsud dgdydydu yuhyuhgsy dhdggdjsgd</li>
-                <li><a href="#">Read More &raquo;</a></li>
+                <li><p>vrvjdhsbc jdbhjsbby hdhdhgdhsud dgdydydu yuhyuhgsy dhdggdjsgd</p>
+				<p id="more0" style="display: none;">jszjckzx</p>
+				</li>
+                <li><a href="#" onclick="toggleText6(this, 'more0'); return false;">Read More &raquo;</a></li>
                 <li></li>
                 <li><strong>Blog Post Title</strong></li>
                 <li>Posted by Admin on 00.00.0000</li>
-                <li>vrvjdhsbc jdbhjsbby hdhdhgdhsud dgdydydu yuhyuhgsy dhdggdjsgd</li>
-                    
-                    <li><a href="#">Read More &raquo;</a></li></ul>
+                <li><p>vrvjdhsbc jdbhjsbby hdhdhgdhsud dgdydydu yuhyuhgsy dhdggdjsgd</p>
+				<p id="more01" style="display: none;">jszjckzx</p></li>
+                <li><a href="#" onclick="toggleText7(this, 'more01'); return false;">Read More &raquo;</a></li></ul>
       </nav>
     </section>
-   
     <section class="block" id="block4">
         <h2>Contact Us</h2>
       <nav>
@@ -287,7 +279,31 @@
   </div>
 </div>
 
-	</div>
+<script type="text/javascript">
+<!--pjesa e footer-->
+		function toggleText6(btn, id){
+			var e = document.getElementById(id);
+			if(e.style.display == 'block'){
+				e.style.display='none';
+				btn.innerHTML="Read more &raquo;";
+			}
+			else {
+				e.style.display='block';
+				btn.innerHTML="Read less &raquo;";
+			}
+		}
+		function toggleText7(btn, id){
+			var e = document.getElementById(id);
+			if(e.style.display == 'block'){
+				e.style.display='none';
+				btn.innerHTML="Read more &raquo;";
+			}
+			else {
+				e.style.display='block';
+				btn.innerHTML="Read less &raquo;";
+			}
+		}
+		</script>
 
   
 
