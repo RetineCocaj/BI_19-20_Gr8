@@ -430,4 +430,46 @@ input, textarea{
     padding: 5px;
     margin:15px;
 }
-
+.six h1{
+  text-align: center;
+    margin-top: 10px;
+    color: #001f63;
+}
+.kolona1{
+  float: left;
+  width: 31%;
+  padding:15px;
+    margin-top: 10px;
+}
+.kolona1 p{
+    color: #001f63;
+}
+.kolona1 h2{
+     color: #001f63;
+}
+#half{
+   
+  margin-bottom: -10px;
+  margin-right: 5px;
+    
+}
+#moon{
+    margin-bottom: -10px;
+    margin-right: 5px;
+}
+#clock{
+    margin-bottom: -10px;
+    margin-right: 5px;
+}
+#star{
+    margin-bottom: -10px;
+    margin-right: 5px;
+}
+#leaf{
+    margin-bottom: -10px;
+    margin-right: 5px;
+}
+#heart{
+    margin-bottom: -10px;
+    margin-right: 5px;
+}
