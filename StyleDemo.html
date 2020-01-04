@@ -70,7 +70,7 @@
 	</div>
     
       <div class="wpb_wrapper" id="wip">  
-    <h2>Work Implementation Process</h2>
+    <h2 id="secondparagraph"></h2>
 <p>Corporate Cleaning Services, upon receiving the contract for window washing, will conduct a review of the window washing tasks and suggest a tentative washing schedule for the building, based on the original specifications of the bid submitted. Once a schedule has been confirmed, Corporate Cleaning Services will then alert the building management and engineers via email in advance of the washings. A suggested window washing date is sent to the property manager the month prior to reconfirm the scheduled date, and a final reminder is then sent the business day before the scheduled cleaning.</p>
 	</div>
             </div>
@@ -122,7 +122,8 @@
     <h2>Awning Cleaning⁧
     </h2>
     <p>First impressions matter. That’s why Corporate Cleaning Services can perform awning pressure washing…</p>
-     <button class="butoni">Read More</button>
+     <button class="butoni" type="button" onclick="clickCounter()>Read More</button>
+	<p id="result"></p>					   
   </div>
   <div class="column" id="high_dusting">
     <h2>High Dusting</h2>
@@ -299,6 +300,26 @@
 				btn.innerHTML="Read less &raquo;";
 			}
 		}
+	    function clickCounter() {
+      if (typeof(Storage) !== "undefined") {
+    if (sessionStorage.clickcount) {
+      sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+    } else {
+      sessionStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "You have clicked the button " + sessionStorage.clickcount + " time(s) in this session.";
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }}
+if (typeof(Storage) !== "undefined") {
+  // Store
+  localStorage.setItem("secondparagraphtext", "Work Implementation Process");
+  // Retrieve
+  document.getElementById("secondparagraph").innerHTML = localStorage.getItem("secondparagraphtext");
+} else {
+  document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+}
+	
 		</script>
 
    
