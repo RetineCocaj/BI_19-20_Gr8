@@ -294,7 +294,7 @@ padding-right:10px;
   padding:10px;
   margin: 5px;
   height:450px;
-  background-color: #023563;
+  
 }
 .column h2{
     color:white;
@@ -363,4 +363,30 @@ padding-right:10px;
 #heart{
     margin-bottom: -10px;
     margin-right: 5px;
+}
+#svg{
+    margin-left: 40px;
+}
+#awning_cleaning{
+   background: lightblue url("images/awning_clean.jpg") center no-repeat ;
+   background-size: 400px 500px;
+
+
+}
+#high_dusting{
+   background: lightblue url("images/high_dust.jpg") center no-repeat  ;
+   background-origin: content-box;
+}
+#holiday{
+   background: lightblue url("images/christmas.jpg") center no-repeat ;
+   background-size: 400px 500px;
+
+}
+.multiple_images{
+    margin: 8px;
+    width: 1225px;
+    height: 300px;
+    background-image: url(images/cleaning_people.png);
+    background-size: 300px;
+    background-repeat: repeat;
 }
