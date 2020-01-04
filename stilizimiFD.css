@@ -474,7 +474,7 @@ input, textarea{
 }
 .radial_gradient{
     margin-left: 830px;
-    width: 350px;
+    width: 300px;
     height: 30px;
   background-image: repeating-radial-gradient(#003a87, #f09516 10%, #edb739 15%,#a8fbff,#4f9ee8);
 }
