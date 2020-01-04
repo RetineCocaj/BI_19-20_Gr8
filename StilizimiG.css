@@ -518,3 +518,40 @@ input, textarea{
   animation-direction: alternate-reverse;
 
 }
+#fam:hover{
+ transform:translate(50px,50px);
+-ms-transform:translate(50px,50px); 
+-webkit-transform:translate(50px,50px); 
+}
+#book_img:hover{
+transform:rotate(180deg);
+-ms-transform:rotate(180deg); 
+-webkit-transform:rotate(180deg);
+}
+#weclean:hover{
+    
+transform:scale(1.5,1.5);
+-ms-transform:scale(1.5, 1.5); 
+-webkit-transform:scale(1.5, 1.5); 
+}
+#werelax:hover{
+ transform:skew(-10deg, 10deg);
+-ms-transform:skew(-10deg, 10deg);
+-webkit-transform:skew(-10deg, 10deg);
+}
+#professional:hover{
+transform:rotateX(150deg);
+-ms-transform:rotateX(150deg); 
+-webkit-transform:rotateX(150deg);
+}
+#reliable:hover{
+transform:rotateY(150deg);
+-ms-transform:rotateY(150deg); 
+-webkit-transform:rotateY(150deg);
+}
+#nicole:hover{
+transform:scaleX(-1);
+-ms-transform:scaleX(-1); 
+-webkit-transform:scaleX(-1);
+
+}
