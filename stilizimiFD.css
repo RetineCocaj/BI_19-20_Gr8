@@ -466,3 +466,15 @@ input, textarea{
 #ContactDetails a:hover{
     color:goldenrod;   
 }
+.linear_gradient{
+    width: 1200;
+    height: 70px;
+    background-image: linear-gradient(-90deg, #003a87, #4f9ee8, #edb739, #f09516, #a8fbff);
+
+}
+.radial_gradient{
+    margin-left: 830px;
+    width: 350px;
+    height: 30px;
+  background-image: repeating-radial-gradient(#003a87, #f09516 10%, #edb739 15%,#a8fbff,#4f9ee8);
+}
