@@ -498,3 +498,23 @@ input, textarea{
     background-color : #404241; 
     border:none;
 }
+@keyframes  animacioni{
+   0%  {background-color: #8acde3;}
+  25%  {background-color: #8ae3ca;}
+  50%  {background-color: #77e686;}
+  75%  {background-color: #35fcef;}
+  100% {background-color: #8ae6b0;}
+}
+
+.container1 h3{
+  width: 620px;
+  height: 40px;
+  padding-top: 5px;
+  padding-left: 6px;
+  background-color: whitesmoke;
+  animation-name: animacioni;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+
+}
