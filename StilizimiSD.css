@@ -32,13 +32,14 @@ display: inline-block;
     color: #383939; 
 }
 header span {
-	margin-left:10px;
-   	font-size:0.9em;
+	margin-left:0px;
+	font-size:0.9em;
+   	padding-left:10px;  
 }
 #mydiv {
-	margin-left:10px;
-  font-variant-caps:titling-caps;
-  font-size: 2em; 
+	font-variant-caps:titling-caps;
+  	font-size: 2em; 
+	padding-left:10px;  
   }
 .list{ 
     display: inline-block;
@@ -87,16 +88,16 @@ header span {
 	left:0px;
 	dispaly:none;
 	visibility:hidden;
+	
 
-	padding:0;
 }
 .list ul li ul li{
 	background:#ddd;
 	dispaly:block;
-	float:left;
-    height:20px;
+	height:20px;
 	width:150px;
-	
+	overflow: visible;
+	padding-left: 0px !important;
 }
 
 .list ul li ul li:hover{
@@ -112,13 +113,12 @@ header span {
 div.wrapper{
     display:block; 
     width:100%; 
-    height: 360px;
+    height: 370px;
     margin:10px 0px 0px 0px; 
     padding:0; 
     text-align:left;
     background-color:#333333;
 }
-
 .nav ul{
     margin:0; 
     padding:0; 
@@ -134,6 +134,7 @@ div.wrapper{
     color: black;
    
 }
+
 .block a:link{
 color:peru;
 }
@@ -153,10 +154,11 @@ color:peru;
     height: 300px;
     margin: 0px 0px 0px 20px;
 }
+
 #block2 ul li{
     border-bottom: 1px solid dimgrey;
     margin: 5px;
-    padding: 7px 15px 15px 7px;
+    padding: 7px 7px 15px 7px;
   
 }
 #block2 ul a{
@@ -180,7 +182,7 @@ color:peru;
  color:peru;
 }
 #block3 ul li{
-    margin: 5px 5px 5px 30px;
+    margin: 5px 5px 5px 15px;
 }
 #block3 h2{
     margin-left: 10px;
@@ -192,7 +194,6 @@ color:peru;
    	width:30%;
 	text-transform:uppercase;
 	font-family:"Garamond";
-   
 }
 input, text{
     padding: 5px;
@@ -200,15 +201,15 @@ input, text{
     background-color : #404241; 
     border:none;
 	width:80%;
-
 }
 input, textarea{
-    width:80%;
+    	width:80%;
      padding: 5px;
     border-radius: 5px;
     background-color : #404241; 
     border:none;
 }
+
 
 .wpb_wrapper{
     margin: 20px ;
