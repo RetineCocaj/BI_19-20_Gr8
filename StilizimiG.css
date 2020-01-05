@@ -174,7 +174,31 @@ header span {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
+#tryit{
+	width:100px;
+	margin-left:350px;
+	border-radius:10px;
+	font-weight:bold;
+}
 
+#fun{
+	width:100px;
+	margin-left:69%;
+	height:20%;
+	font-weight:bold;
+    margin-top:0;
+    border-radius: 10px;
+    padding: 5px;
+	background-color: whitesmoke;
+	animation-name: animacioni;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+}
+
+#demo1{
+		margin-left:73%;
+}
 .container1 h3{
 	color:#3a3a3a;
 	margin-top:10%;
