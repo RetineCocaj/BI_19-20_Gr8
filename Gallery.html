@@ -74,12 +74,34 @@
 
 
 			
+					
 		<div class="included">
 			<h4>What's included in my home<i class="down"></i> <br>cleaning? </h4>
+	<!--Click the button to do a global search for "in" in a string.-->
+			<button id="tryit" onclick="myFunction()"><em>Try it</em></button>
+				<p id="demo"></p>
 		</div>
+			<script>
+				function myFunction() {
+				var str = "What's included in my home cleaning??";
+				var patt1 = /in/g;
+				var result = str.match(patt1);
+				document.getElementById("demo").innerHTML = result;}
+			</script>
 		
 		<div class="container1">
 		<h3>The Most Reliable Name in Home and Office Cleaning</h3>
+	<!--Click the button to do a case-insensitive search for "most" in a string.-->
+		<button id="fun" onclick="myFunction1()"><em>Try it</em></button>
+			<p id="demo1"></p>
+
+		<script>
+			function myFunction1() {
+			var str1 = "The Most Reliable Name in Home and Office Cleaning";
+			var patt1 = /most/i;
+			var result1 = str1.match(patt1);
+			document.getElementById("demo1").innerHTML = result1;}
+		</script>
 		<div id="office">
       <section id="services" >
         <article class="figs3">
