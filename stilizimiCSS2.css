@@ -238,6 +238,11 @@ input, textarea{
     
     
 }
+.table_wrapper p{
+margin-left:1000px;
+font-size:20px;
+font-weight:bold;
+}
 .table_rows{
     margin: 20px;
     font-family: sans-serif;
