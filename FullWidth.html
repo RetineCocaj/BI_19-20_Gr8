@@ -42,6 +42,22 @@
 			alert("Vlerat duhet te jene te njejta dhe jo boshe");
 			return false;
 			}
+		        
+   function check() {
+      var x;
+      x = document.getElementById("num3").value;
+     
+    try { 
+    if(x == "")  throw "is Empty";
+    if(isNaN(x)) throw "not a number";
+    if(x > 100)   throw "too high";
+    if(x < 1)  throw "too low";
+      }
+      catch(err) {
+        alert("Your code is " + err);
+      }
+    }
+
 		</script>
 
 </head>
@@ -174,9 +190,11 @@
 				 <tr>
 						<td>
 						    <div id="pw">
-						<span> Number/ID: &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Again:</span><br>
+						    <div id="pw">
+						<span> Number/ID: &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Again:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Code:</span><br>
 						<input type="text" name="num1" id="num1">
-						<input type="password" name="num2" id="num2"></br>
+						<input type="text" name="num2" id="num2">
+                      				<input type="text" name="num3" id="num3"></br>
 						</div>
 </td>
 </tr>
