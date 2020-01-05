@@ -197,8 +197,30 @@
     
     </div>
  
-    
+        <div class="multicolumn" >
+        <h2 id="multicolumn">We recognise the importance of having a perfectly clean environment as this can influence your customers’ perception of your business and brand. We have extensive experience in delivering high-quality contract cleaning services in a diverse range of commercial environments. The same is true of the domestic environment and we strive to help keep your home in immaculate condition. Using our specialist knowledge and experience, we help our clients considerably improve the standard of cleanliness in their home or work environment.
 
+        Our primary concern is to give all our current and potential customers a competitive price and sought-after services that anyone would recommend. We have become a highly respected cleaning company across the areas we serve and we have built a reputation for our reliability. The result is an offering with an extensive range of specialist services that is guaranteed to leave you with a job well done.</h2>
+        
+    </div>
+    
+  
+   <div class="statistics">
+     <h3>   Our company has a 5 year experience.
+      During this time this is the number of our clients for every year.</h3> 
+      <p id="firstyear"> First year we had 203 costumers.<button onclick="max()">Click if you want to see the max number</button><button onclick="min()">Click if you want to see the min number</button></p> 
+      <p id="secondyear">  Second year we had a number of 350 costumers.<button onclick="eksponent()">Click if you want to see the exponential version.</button></p>
+        <p id="thirdyear">Third year the number doubled by reaching a number of 702 costumers.<button onclick="func_match()">Click to find matching</button></p>
+        
+       <p id="fourthyear">Fourth year we also had an increase by reaching a number of 850 costumers.<input type="text" id="replace"><button onclick=" func_replace() ">Click to replace this whole sentence</button></p> 
+        <p id="fifthyear">This year we are proud to have reached 1100 costumers.<button>Click</button></p>
+        <p><input type="text" id="uri_text"><button onclick="globalconst()& string()">Click to encode and decode an URI</button></p>
+        <p id="uri_result"></p>
+        <p>The number of our income this year has reached:<p id="num"><button id="floor" onclick="floor()">Floor</button>3876985.548<button id="ceil" onclick="ceil()">Ceil</button></p>
+    
+    
+    </div>
+ 
     <script type="text/javascript">
       var canvas = document.getElementById("canvas1");
       var ctx1 = canvas.getContext("2d");
@@ -249,6 +271,80 @@
                 var data = ev.dataTransfer.getData("text"); 
                 ev.target.appendChild(document.getElementById(data)); 
             } 
+	    
+	    function max(){
+            
+            var a = Math.max(203, 350,702,850,1100);
+            alert(Number.MAX_VALUE +" The maximum number is "+ a+". " ) ;
+            
+            }
+            function min(){
+            
+            var a = Math.min(203, 350,702,850,1100);
+            alert(" The minimum number is "+ a+". " ) ;
+            
+            }
+        
+        
+            function nan(){
+             x= document.getElementById("num").value;
+              var res = "";
+              if(isNaN(x)== true);
+              alert(isNaN);
+            }
+        
+        
+         function eksponent() {
+          var num = 350;
+          var n = num.toExponential();
+          alert(n);
+        }
+        
+        
+        function floor() {
+          document.getElementById("num").innerHTML = Math.floor(3876985.548);
+         }
+        
+        
+        function ceil() {
+          document.getElementById("num").innerHTML = Math.ceil(3876985.548);
+         }
+        
+        
+         function string() {
+          num = document.getElementById("uri_text").value;
+          var y = num.toString();
+        }
+        
+        
+          function func_match() {
+             var str="";
+          str+= document.getElementById("thirdyear").value; 
+          var res = str.match(/e/g);
+          alert(res);
+        }
+        
+        
+          function func_replace() {
+          var str = "";
+              str+=document.getElementById("fourthyear").innerHTML; 
+              var repl="";
+              repl+=document.getElementById("replace").value; 
+          var res = str.replace(str, repl);
+          document.getElementById("fourthyear").innerHTML = res;
+           }
+        
+        
+        function globalconst() {
+          //my test.asp?name=ståle&car=saab
+          //var uri = "";
+            uri= document.getElementById("uri_text").value;
+          var enc = encodeURI(uri);
+          var dec = decodeURI(enc);
+          var res = "Encoded URI: " + enc + "<br>" + "Decoded URI: " + dec;
+          document.getElementById("uri_result").innerHTML = res;}
+        
+	    
 	                function validateForm() {
           var x = document.forms["formfooter"]["nameinput"].value;
           if (x == "") {
