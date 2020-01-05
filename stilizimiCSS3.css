@@ -204,16 +204,21 @@ input, textarea{
     background-color : #404241; 
     border:none;
 }
-
+#date{
+margin-left:1000px;
+font-size:20px;
+font-weight:bold;
+}
 .w-washing{
     background-color: aliceblue;
-    width: 92.5%;
+    width: 100%;
 }
 .window_washing_text{
-    float: left;
-    width:50%;
+    float: right;
+    width:46%;
     font-family:sans-serif;
     background-color: #1056c2;
+	margin-top:25px;
     height: 700px;
    
     
@@ -238,10 +243,9 @@ input, textarea{
     
 }
 .window_washing_img{
-    float: right;
-    width:50%;
+   margin-top:0px;
+    width:20px;
     background-color: aliceblue;
-  
     
     
 }
