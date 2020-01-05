@@ -415,7 +415,10 @@ font-weight:bold;
     border: 7px solid #76b8f5;
     border-radius: 5px;
  border-image: url(images/3.jpg) 20 round;
-
+ outline: 5px dashed blue;
+  outline-offset: 5px;
+ resize: both;
+overflow: auto;
     font-family: "Presley Slab", sans-serif;
 }
 #box1, #box2{
