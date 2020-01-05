@@ -85,16 +85,16 @@ header span {
 	left:0px;
 	dispaly:none;
 	visibility:hidden;
+	
 
 }
 .nav ul li ul li{
 	background:#ddd;
 	dispaly:block;
-	float:left;
 	height:20px;
 	width:150px;
-	
-	
+	overflow: visible;
+	padding-left: 0px !important;
 }
 
 .nav ul li ul li:hover{
