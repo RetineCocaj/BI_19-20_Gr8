@@ -6,6 +6,44 @@
          <title>Projekti ne WWW </title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">   
         <link rel="stylesheet" href="StilizimiFW.css"/>  
+	<script type="text/javascript">
+<!--pjesa e footer-->
+		function toggleText6(btn, id){
+			var e = document.getElementById(id);
+			if(e.style.display == 'block'){
+				e.style.display='none';
+				btn.innerHTML="Read more &raquo;";
+			}
+			else {
+				e.style.display='block';
+				btn.innerHTML="Read less &raquo;";
+			}
+		}
+		function toggleText7(btn, id){
+			var e = document.getElementById(id);
+			if(e.style.display == 'block'){
+				e.style.display='none';
+				btn.innerHTML="Read more &raquo;";
+			}
+			else {
+				e.style.display='block';
+				btn.innerHTML="Read less &raquo;";
+			}
+		}
+		 
+			function validate(){
+			 var n1=document.getElementById("num1");
+			 var n2=document.getElementById("num2");
+             if (n1.value!="" && n2.value!=""){
+				if(n1.value==n2.value){
+					return true;
+					}
+				}
+			alert("Vlerat duhet te jene te njejta dhe jo boshe");
+			return false;
+			}
+		</script>
+
 </head>
 <style>
 		
@@ -57,6 +95,7 @@
 	</div>
 			
 			<div class="firstline">
+				<p id="date">Date: <span id="datetime"></span></p>
 				 <div class="linear_gradient">
   
             			  </div>
@@ -77,7 +116,7 @@
 				 <tr>
 				 <td>
 				 <h2>Property Adress</h2><hr>
-				 <label id="PropertyAdress">Property Adress <span class="field_required" style="color:#ee0000;">*</span></br><input type="text" name="title" id="title" class="required hilightable" required ></label>
+				 <label id="PropertyAdress">Property Adress <span class="field_required" style="color:#ee0000;">*</span></br><input type="text" name="titlee" id="title" class="required hilightable" required ></label>
 				 </td>
 				 </tr>
 				 <tr>
@@ -132,7 +171,15 @@
 								
 				<tr><td><label id="">Who is your current window washing company?</br><input type="text" name="title" id="title" class="required hilightable"></label>
 				</td></tr>
-				
+				 <tr>
+						<td>
+						    <div id="pw">
+						<span> Number/ID: &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Again:</span><br>
+						<input type="text" name="num1" id="num1">
+						<input type="text" name="num2" id="num2"></br>
+						</div>
+</td>
+</tr>
 				
 				<tr>
 				<td>
@@ -259,31 +306,11 @@
    
   </div>
 </div>
-<script type="text/javascript">
-<!--pjesa e footer-->
-		function toggleText6(btn, id){
-			var e = document.getElementById(id);
-			if(e.style.display == 'block'){
-				e.style.display='none';
-				btn.innerHTML="Read more &raquo;";
-			}
-			else {
-				e.style.display='block';
-				btn.innerHTML="Read less &raquo;";
-			}
-		}
-		function toggleText7(btn, id){
-			var e = document.getElementById(id);
-			if(e.style.display == 'block'){
-				e.style.display='none';
-				btn.innerHTML="Read more &raquo;";
-			}
-			else {
-				e.style.display='block';
-				btn.innerHTML="Read less &raquo;";
-			}
-		}
-		</script>
+<script>
+/*date*/
+var dt = new Date();
+document.getElementById("datetime").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (("0"+dt.getDate()).slice(-2)) +"/"+ (dt.getFullYear());
+</script>
 
 </body>   
 </html>
