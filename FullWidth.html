@@ -100,11 +100,11 @@
   
             			  </div>
 			  <table class="table_1">
-			  <form action="/action_page.php">
+			  <form action="/action_page.php"  autocomplete="on" onsubmit="return validate()" method="post">
 				<tr>
 				<td>
 				<h6>Please complete all required contact fields.</h6>
-				<em style="color:#ee0000;">* Required</em><hr>
+				<em><mark><u>* Required</u></mark></em><hr>
 				</td>
 				</tr>
 				<tr><td><label id="ContactName">Contact Name <span class="field_required" style="color:#ee0000;">*</span></br><input type="text" name="title" id="title" class="required hilightable" required ></label>
@@ -162,7 +162,7 @@
 				    <label id="Phone">PhoneNumber <span class="field_required" style="color:#ee0000;">*</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Fax &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Email <span class="field_required" style="color:#ee0000;">*</span></br>
 					<input  placeholder="123-45-678" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
 					 <input  placeholder="123-45-678" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
-					  <input type="text" name="title" id="title2" class="required hilightable"  required ></label>
+					   <input type="email" name="title" id="title2" class="required hilightable" autocomplete="off" required ></label>
 				   </div>
                    <hr> 
                  </td>				
@@ -176,7 +176,7 @@
 						    <div id="pw">
 						<span> Number/ID: &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Again:</span><br>
 						<input type="text" name="num1" id="num1">
-						<input type="text" name="num2" id="num2"></br>
+						<input type="password" name="num2" id="num2"></br>
 						</div>
 </td>
 </tr>
@@ -224,12 +224,21 @@
   
              		        </div>	
 				<h2>Contact<br> Information</h2><hr>
-				<h4> <b>Corporate Cleaning</b><br><b> Services, Inc.</b></h4>
-				<p>21 West Elm Street, Second <br>Floor <br> Chicago, IL 60610</p>
+				<table border="1" cellspacing="10" cellpadding="5">
+					<tr>
+						<td bgcolor="#F1FAFC"><b>Corporate Cleaning</b></td>
+						<td bgcolor="#F1FAFC"><b> Services, Inc.</b></td>
+					</tr>
+
+				</table>
+				<address><p>21 West Elm Street, Second <br>Floor <br> Chicago, IL 60610</p>
 				<p><b>Email</b></p>
-				<p><a href=mailto: >info@corporatecleaning.com</a> <br>
-				<b>Main Phone:</b> 312-573-3333 <br>
-				<b>Fax: </b> 312-573-5730</p>
+				<p><a href=mailto: >info@corporatecleaning.com</a></p>
+					<dl>
+						<dt><b>Main Phone:</b> 312-573-3333</dt>
+				        <dd><b>Fax: </b> 312-573-5730</dd>
+				</dl>
+					</address>
 			    </div>
 				
 				
