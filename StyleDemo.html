@@ -131,18 +131,19 @@
     <h2>Awning Cleaning⁧
     </h2>
     <p>First impressions matter. That’s why Corporate Cleaning Services can perform awning pressure washing…</p>
-     <button class="butoni" type="button" onclick="clickCounter()>Read More</button>
-	<p id="result"></p>					   
+     <button class="butoni" type="button" onclick="clickCounter()">Read More</button>
+    <p id="result"></p>
   </div>
   <div class="column" id="high_dusting">
     <h2>High Dusting</h2>
     <p>There are areas that are simply hard to reach. Corporate Cleaning Services is able to offer an access solution…</p>
-    <button class="butoni">Read More</button>
+    <button class="butoni" onclick="test_text()">Read More</button>
   </div>
   <div class="column" id="holiday">
     <h2>Holiday Decoration Installation and Removal</h2>
     <p>To better serve our client needs, you can call us for the installation and removal of your holiday decorations…</p>
-    <button class="butoni">Read More</button>
+    <button class="butoni" onclick="exec_text()">Read More</button>
+    <p id="exec_tex"></p>
   </div>
 </div>
     </div> 
@@ -155,7 +156,7 @@
         <h1>We believe in six principles</h1></div>
         
       <div class="kolona1">
-          <h2><img src="images/half.png" width="60px" height="50px" id="half">Trust and Safety</h2>
+          <h2 ><img src="images/half.png" width="60px" height="50px" id="half">Trust and Safety</h2>
           <p>Each cleaner must undergo an extensive background check, DOJ SMART screen, interviews, and address verification for your safety.</p>
 
       </div>
@@ -179,7 +180,7 @@
         
       <div class="kolona1">
           <h2><img src="images/star.png" width="60px" height="50px" id="star">Highest Standard of Quality</h2>
-          <p>Our stringent selection process ensures you will receive an unparalleled cleaning experience with top-notch professionals.</p>
+          <p id="star_text">Our stringent selection process ensures you will receive an unparalleled cleaning experience with top-notch professionals.</p>
 
       </div>
       <div class="kolona1">
@@ -199,6 +200,11 @@
     </div>
         
         
+    </div>
+    
+    <div>
+    <button onclick="search_text()" id="search_button">Search the position of a letter in highest standard.</button>
+    
     </div>
         
     <svg width="1415" height="40" id="svg">
@@ -320,20 +326,43 @@
   } else {
     document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
   }}
-if (typeof(Storage) !== "undefined") {
-  // Store
-  localStorage.setItem("secondparagraphtext", "Work Implementation Process");
-  // Retrieve
-  document.getElementById("secondparagraph").innerHTML = localStorage.getItem("secondparagraphtext");
-} else {
-  document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
-}
-/*date*/
-var dt = new Date();
-document.getElementById("datetime").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (("0"+dt.getDate()).slice(-2)) +"/"+ (dt.getFullYear());												     
-												     
-												     
-	
+	if (typeof(Storage) !== "undefined") {
+	  // Store
+	  localStorage.setItem("secondparagraphtext", "Work Implementation Process");
+	  // Retrieve
+	  document.getElementById("secondparagraph").innerHTML = localStorage.getItem("secondparagraphtext");
+	} else {
+	  document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+	}
+		 function exec_text(){
+		var hol="";
+		hol+= document.getElementById("holiday").innerHTML;
+		var obj = /h/.exec(hol);
+	document.getElementById("exec_tex").innerHTML =
+	"Found " + obj[0] + " in position " + obj.index + " in the text";
+
+	    }
+
+	    function test_text(){
+		var ac="";
+		ac+= document.getElementById("awning_cleaning").innerHTML;
+		alert("Is letter e in this text? "+/e/.test(ac));
+
+	    }
+	    function search_text(){
+		var str="";
+	       str+= document.getElementById("star_text").innerHTML;
+	       //var word="";
+	      //  word+= document.getElementById("search_input").value;
+		var n = str.search(/e/i);
+		alert(n);
+	    }
+	/*date*/
+	var dt = new Date();
+	document.getElementById("datetime").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (("0"+dt.getDate()).slice(-2)) +"/"+ (dt.getFullYear());												     
+
+
+
 		</script>
 
    
