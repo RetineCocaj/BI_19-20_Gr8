@@ -48,6 +48,7 @@
 	
 
 	</div>
+	<p id="date">Date: <span id="datetime"></span></p>
 	<div class="permbajtja">
 			<span>It's as easy as 1-2-3.</span>
 			</div>
@@ -279,6 +280,9 @@
 				btn.innerHTML="Read less &raquo;";
 			}
 		}
+	/*date*/
+var dt = new Date();
+document.getElementById("datetime").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (("0"+dt.getDate()).slice(-2)) +"/"+ (dt.getFullYear());
 		</script>
 </body>   
 </html>
