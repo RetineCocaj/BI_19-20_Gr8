@@ -249,6 +249,43 @@
                 var data = ev.dataTransfer.getData("text"); 
                 ev.target.appendChild(document.getElementById(data)); 
             } 
+	                function validateForm() {
+          var x = document.forms["formfooter"]["nameinput"].value;
+          if (x == "") {
+            alert("Name must be filled out");
+            return false;
+                }
+                else if
+                (x.length >200){
+           alert("name has to many characters")
+                    }
+                  }
+        
+         function validateForm2() {
+          var x = document.forms["formfooter"];["email"].value;
+          if (x == "") {
+            alert("Email must be filled out");
+            return false;
+                }
+                else if
+                (x.length >200){
+           alert("Email has to many characters")
+                    }
+             else if(x.length <7){
+           alert("Email doesn't exist");
+                 
+             }
+                  }
+         function validateForm3() {
+          var x = document.forms["formfooter"];["message"].value;
+          if (x == "") {
+            alert("Message is empty");
+            return false;
+                }
+                else if
+                (x.length >500){
+           alert("Message has to many characters")
+                    }}
     
 </script>
 	
