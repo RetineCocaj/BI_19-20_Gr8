@@ -84,6 +84,7 @@
             </div>
        
         <div class="table_wrapper">
+		<p>Date: <span id="datetime"></span></p>
         <table class="table_1">
            <tr> <td class="table_rows"><img src="images/t1.png" width="40px" id="table_img" >Schedule confirmations are sent out the month before, followed by a reminder the day before.</td></tr>
               <tr><td class="table_rows"><img src="images/t2.png" width="40px" id="table_img" >Daily e-mail notifications of work status.</td></tr>  
@@ -327,6 +328,11 @@ if (typeof(Storage) !== "undefined") {
 } else {
   document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
 }
+/*date*/
+var dt = new Date();
+document.getElementById("datetime").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (("0"+dt.getDate()).slice(-2)) +"/"+ (dt.getFullYear());												     
+												     
+												     
 	
 		</script>
 
