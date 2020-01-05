@@ -56,7 +56,21 @@
       catch(err) {
         alert("Your code is " + err);
       }
+    } 
+	var x = document.getElementById("loc");	
+		function findLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
     }
+}
+
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;	
+}
+
 
 		</script>
 
@@ -260,7 +274,13 @@
 			    </div>
 				
 				
-				
+				  <div id="location">
+      <h2 id="loc_t">Please let us know your location so we can help you:</h2>
+  <button onclick="findLocation()">Click here for location</button>
+      <p id="loc"></p>
+
+  </div>
+			
 				
 	
 	<div class="wrapper row3">
