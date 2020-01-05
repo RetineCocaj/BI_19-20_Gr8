@@ -288,6 +288,18 @@ input[id="num2"]{
     box-shadow: none;
     background-color: transparent;
 }
+input[id="num3"]{
+    margin-left: 50px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 16px;
+    height: 24px;
+    width:22%;
+    padding: 4px;
+    box-shadow: none;
+    background-color: transparent;
+}
+
 
 #Anash p{
 	 line-height: 22px;
