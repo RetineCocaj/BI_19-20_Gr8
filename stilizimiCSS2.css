@@ -8,7 +8,7 @@ background-color:#D7D7D7;
 
 .Margin{
 	margin-left:90px;
-    margin-right:90px;
+         margin-right:90px;
 	background-color:white;
 }
 .top{
@@ -28,14 +28,15 @@ header {
 	
 }
 header > h1 {
-	display: inline-block;
+display: inline-block;
     color: #383939; 
 }
 header span {
-	margin-left:0;
+	margin-left:10px;
    	font-size:0.9em;
 }
 #mydiv {
+	margin-left:10px;
   font-variant-caps:titling-caps;
   font-size: 2em; 
   }
@@ -273,25 +274,37 @@ padding-right:10px;
     
 }
 .video{
-    margin-left: 90px;
+    margin-left: 150px;
+	margin-bottom:20px;
 }
+
 .video2{
 	background-color: #f5f6f7;
 	border:2px solid orange;
-	margin:30px 200px 0px 200px;
+float:right;
 } 
 
 #audiofig{
 	margin-top:50px;
-	margin-left:0px;
 	font-size:30px;
 	font-weight:bold;
 	color:blue;
 	
 }
-#audio{
+
+.video3{
+	background-color: #f5f6f7;
+	border:2px solid orange;
+	margin:0px 540px 0px 0px;
 	
-	  margin-left: 150px;
+} 
+
+#audiofig1{
+	margin-top:50px;
+	font-size:30px;
+	font-weight:bold;
+	color:blue;
+	
 }
 .column {
   float: left;
