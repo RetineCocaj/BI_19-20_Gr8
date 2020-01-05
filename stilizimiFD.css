@@ -40,27 +40,7 @@ header span {
   font-size: 2em; 
   padding-left:10px;
   }
-.bodypart{
-    
-    text-align: center;
-    color: gray;
-    padding: 1em 4em;
-     border-bottom:1px solid gray;
-     font-style: italic;
-}
 
-.text
-{
-	font-family:Georgia, 'Times New Roman', Times, serif;
-	font-style:italic;
-	height:125px;
-	text-align: center;
-	display:inline-block;
-	padding: 0 2.5em;
-	line-height: 25pt;
-	font-size:30px;
-	color: #1D1E1D;
-}
 
 .firstpart{
     padding: 20px 20px 0 20px;
@@ -134,53 +114,16 @@ header span {
 	visibility:visible;
 	
 }
-
-.figs3{
-    display:block; 
-    float:left; 
-    margin:0 30px 0 40px ;
-    width:300px;
-}
-   
-#Img #Indonecteus
-{
-	 border-bottom: 1px solid #999999;
-	 padding-top:125px;
-	
-}
-#Img figure
-{
-	display:inline-block;	
-}
-
-#shkrimi #About
-{
-	
-	 border-bottom: 1px solid #999999;
-	 padding:0;
-
-}
-#shkrimi figure 
-{
-	display:inline-block;	
-}
-#shkrimi a:link{
-    color: grey;
-    padding: 1em;
-    padding-left:  0px;
-    text-decoration: none;
-}
-#shkrimi a:visited{
-    color:gray;
-}
-#shkrimi a:hover{
-    color:goldenrod;   
-}
- 
 .firstline{
     line-height: 32px;
     margin: 10px ;
     padding:50px ; 	
+}
+.firstline #date{
+	float:right;
+	margin-right:10px;
+	font-size:20px;
+	font-weight:bold;
 }
 .firstline h6{
 	margin-left:50px;
@@ -236,6 +179,7 @@ input[name="title"]{
 #title{ width: 85% }
 #title1 { width: 38%}
 #title2 { width: 22%}
+#titlee{ width: 85% }
 
 input:focus:required:invalid {
    border: 2px solid red !important;
@@ -319,6 +263,32 @@ h4{
     margin:50px;
 }
 
+#pw span{
+	margin-left: 50px;
+}
+input[id="num1"]{
+	margin-left:50px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 16px;
+    height: 24px;
+	width:22%;
+    padding: 4px;
+    box-shadow: none;
+    background-color: transparent;
+}
+input[id="num2"]{
+	margin-left: 50px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 16px;
+    height: 24px;
+	width:22%;
+    padding: 4px;
+    box-shadow: none;
+    background-color: transparent;
+}
+
 #Anash p{
 	 line-height: 22px;
 	 font-size:15px;
@@ -329,7 +299,7 @@ div.wrapper{
     display:block; 
     width:100%; 
     height: 360px;
-    margin:1300px 0px 0px 0px; 
+    margin:1400px 0px 0px 0px; 
     padding:0; 
     text-align:left;
     background-color:#333333;
