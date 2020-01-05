@@ -213,7 +213,7 @@
         <p id="thirdyear">Third year the number doubled by reaching a number of 702 costumers.<button onclick="func_match()">Click to find matching</button></p>
         
        <p id="fourthyear">Fourth year we also had an increase by reaching a number of 850 costumers.<input type="text" id="replace"><button onclick=" func_replace() ">Click to replace this whole sentence</button></p> 
-        <p id="fifthyear">This year we are proud to have reached 1100 costumers.<button>Click</button></p>
+        <p id="fifthyear">This year we are proud to have reached 1100 costumers.<button onclick="sqrt()">Click for the square root</button></p>
         <p><input type="text" id="uri_text"><button onclick="globalconst()& string()">Click to encode and decode an URI</button></p>
         <p id="uri_result"></p>
         <p>The number of our income this year has reached:<p id="num"><button id="floor" onclick="floor()">Floor</button>3876985.548<button id="ceil" onclick="ceil()">Ceil</button></p>
@@ -289,6 +289,11 @@
             alert(" The minimum number is "+ a+". " ) ;
             
             }
+	            function sqrt(){
+            
+            var num=1100;
+            alert(Math.sqrt(num));
+        }
         
         
             function nan(){
