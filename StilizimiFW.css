@@ -461,3 +461,13 @@ input, textarea{
     height: 30px;
   background-image: repeating-radial-gradient(#003a87, #f09516 10%, #edb739 15%,#a8fbff,#4f9ee8);
 }
+
+#loc_t{
+    width: 250px;
+    word-wrap: break-word;
+    color: midnightblue;
+}
+#location{
+    margin-right: 5px;
+    float: left;
+}
