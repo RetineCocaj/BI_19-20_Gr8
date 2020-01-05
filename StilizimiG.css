@@ -648,3 +648,14 @@ transform:scaleX(-1);
 -webkit-transform:scaleX(-1);
 
 }
+.svg_stars{
+    margin-top: 100px;
+    width: 18%;
+    margin-left: 20px;
+} 
+#ranked{
+    margin-top: 30px;
+    margin-left: 350px;
+    color: skyblue;
+}
+
