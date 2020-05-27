@@ -377,21 +377,7 @@
                             <p><textarea placeholder="Message" name="message" rows="3"></textarea></p>
                             <p><input id="submit" type="submit" name="submit"></p>
                         </form>
-                        <?php
-                        function saveMessages(){
-                            if(isset($_POST['submit'])){
-                                $name = $_POST["name"];
-                                $email = $_POST["email"];
-                                $msg = $_POST["message"];
-
-                                $myfile = fopen("testfile.txt", "w") or die("Unable to open file!");
-                                $txt = $name." contacted us with email ".$email.", and said \"".$msg."\"\n";
-                                fwrite($myfile, $txt);
-                                fclose($myfile);
-
-                            }
-                        }
-                        ?>
+                        
                     </nav>
                 </section>
             </div>
