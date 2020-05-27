@@ -18,19 +18,23 @@ $city=$_POST['city'];
 $tel=$_POST['phone'];
 
 $sqlQuery = "INSERT INTO Bookings (contactName,managementComp,businessName,propAddress,city,tel)
-          VALUES('$contactName', '$managementComp','$businessName','$propAddr','$city','$tel')";
+          VALUES('$contactName','$managementComp','$businessName','$propAddr','$city','$tel')";
+
 if ($conn->query($sqlQuery) === TRUE) {
-    echo '<script language="javascript">';
-    echo 'alert("Data successfully saved")';
-    echo '</script>';
+    echo '<script type="text/javascript">'; 
+    echo 'alert("Data successfully saved");'; 
+    echo 'window.location.href= "http://localhost:8888/BI_19-20_Gr8/FullWidth.html";';
+    echo '</script>';  
   } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    $error = 'Error: ' . $sql . $conn->error;
+    echo '<script type="text/javascript">'; 
+    echo 'alert("'.$error.'");'; 
+    echo 'window.location.href= "http://localhost:8888/BI_19-20_Gr8/FullWidth.html";';
+    echo '</script>'; 
   }
 
 
 $conn->close();
-
-header('Location: http://localhost:8888/BI_19-20_Gr8/FullWidth.html');
 ?>
 
 
