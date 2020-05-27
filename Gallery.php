@@ -316,13 +316,28 @@ echo $post->get_name();
                 <section class="block" id="block4">
                     <h2>Contact Us</h2>
                     <nav>
-
-                        <form>
-                            <p><input id="nameinput" name="text" type="text" placeholder="Name"></p>
-                            <p><input id="email" name="text" type="text" placeholder="Email"></p>
-                            <p><textarea placeholder="Message" rows="3"></textarea></p>
-                            <p><input id="submit" type="submit"></p>
+                    <form method="post">
+                            <p><input id="nameinput" name="name" type="text" placeholder="Name"></p>
+                            <p><input id="email" name="email" type="text" placeholder="Email"></p>
+                            <p><textarea placeholder="Message" name="message" rows="3"></textarea></p>
+                            <p><input id="submit" type="submit" name="submit"></p>
                         </form>
+                        <?php
+                            if(isset($_POST['submit'])){
+                                $name = $_POST["name"];
+                                $email = $_POST["email"];
+                                $msg = $_POST["message"];
+                                $myfile = "contactMessages.txt";
+                                
+                                $txt = $name.' tried to contact the company, with email '.$email.', and message "'.$msg.'", at '.date("H:i:s d/m/Y.");
+                                $line = '=======================================================================================================================';
+                                file_put_contents($myfile, $txt. "\r\n".$line."\r\n", FILE_APPEND);
+
+                                echo '<script type="text/javascript">'; 
+                                echo 'alert("Message has been successfully sent");'; 
+                                echo '</script>';  
+                            }
+                        ?>
                     </nav>
                 </section>
 
