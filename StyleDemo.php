@@ -80,7 +80,12 @@
                     <p>Corporate Cleaning Services, upon receiving the contract for window washing, will conduct a review of the window washing tasks and suggest a tentative washing schedule for the building, based on the original specifications of the bid
                         submitted. Once a schedule has been confirmed, Corporate Cleaning Services will then alert the building management and engineers via email in advance of the washings. A suggested window washing date is sent to the property manager
                         the month prior to reconfirm the scheduled date, and a final reminder is then sent the business day before the scheduled cleaning.</p>
-                </div>
+               <?php
+						echo $_SERVER['PHP_SELF'];
+						echo "<br>";
+						echo $_SERVER['HTTP_USER_AGENT'];
+						?>
+		    </div>
             </div>
 
             <div class="table_wrapper">
