@@ -73,8 +73,8 @@
                         <img src="images/a.jpg">
                     </div>
 
-                    <button class="prew" onclick="prewImage()">  </button>
-                    <button class="next" onclick="nextImage()">  </button>
+                    <button class="prew" onclick="prewImage()"> < </button>
+                    <button class="next" onclick="nextImage()"> > </button>
                 </div>
 
                 <script type="text/javascript">
@@ -94,7 +94,8 @@
                         } else {
                             i = 1;
                         }
-                        slider_content.innerHTML = '<img src="images/' + image[i - 1] + '.jpg">';
+                        slider_content.innerHTML = "<img src="
+                        images / +image[i - 1] + ".jpg>";
                     }
 
 
@@ -107,7 +108,8 @@
                         } else {
                             i = image.length;
                         }
-                        slider_content.innerHTML = '<img src="images/' + image[i - 1] + '.jpg">';
+                        slider_content.innerHTML = "<img src="
+                        images / +image[i - 1] + ".jpg>";
 
                     }
                     <!--Pjesa e fotove me shkrim read more-->
