@@ -270,7 +270,18 @@
                 </tr>
 
             </table>
-            <address><p>21 West Elm Street, Second <br>Floor <br> Chicago, IL 60610</p>
+            <address><?php
+				$address=array("21 West Elm Street, Second ","Floor","Chicago, IL 60610");
+				sort($address);
+
+				$clength=count($address);
+				for($x=0;$x<$clength;$x++)
+				{	
+					echo "<br>";
+					echo $address[$x];
+					echo "<br>";
+				}
+			?>
 				<p><b>Email</b></p>
 				<p><a href=mailto: >info@corporatecleaning.com</a></p>
 					<dl>
