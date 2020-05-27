@@ -1,16 +1,15 @@
 body{
-    
 
 font-family: "Garamond" sans-serif ;
-background-color:#D7D7D7;
-	
+	background-color:#D7D7D7;
 }
 
 .Margin{
 	margin-left:90px;
-         margin-right:90px;
+    margin-right:90px;
 	background-color:white;
 }
+
 .top{
     
     font-family:"Garamond";
@@ -28,17 +27,17 @@ header {
 	
 }
 header > h1 {
-display: inline-block;
+	display: inline-block;
     color: #383939; 
 }
 header span {
-	margin-left:0px;
-	font-size:0.9em;
-   	padding-left:10px;  
+	margin-left:0;
+   	font-size:0.9em;
+	padding-left:10px;  
 }
 #mydiv {
-	font-variant-caps:titling-caps;
-  	font-size: 2em; 
+  font-variant-caps:titling-caps;
+  font-size: 2em; 
 	padding-left:10px;  
   }
 .list{ 
@@ -110,6 +109,210 @@ header span {
 	
 }
 
+/*permbajtja*/
+.wpb_wrapper{
+    margin: 20px ;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 20px;;
+    
+    
+}
+.wpb_list ul li{
+    padding: 10px;
+    color: goldenrod;
+    margin: 5px 5px 5px 30px;
+}
+#wip{
+    border-top: 3px solid goldenrod;
+    padding-top: 40px;
+    margin-top: 30px;
+}
+.wpb_wrapper h2{
+    font-family: sans-serif;
+    font-size: 35px;
+}
+.table_wrapper{
+    
+    margin-right: 10px;
+    padding-right:10px ;
+    
+    
+}
+.table_wrapper p{
+margin-left:1000px;
+font-size:20px;
+font-weight:bold;
+}
+.table_rows{
+    margin: 20px;
+    font-family: sans-serif;
+    padding: 15px;
+}
+
+.table_1{
+    border: 4px solid goldenrod;
+    border-radius: 5px;
+    width: 300px;
+    float: left;
+    margin: 40px 0px 0px 0px;
+	padding-right:10px;
+}
+#table_img{
+    padding: 10px;
+    margin-right: 5px;
+    float: left;
+}
+.content1_wrapper{
+    margin-left: 40px;
+    width:800px;
+    float: left;
+}
+.all_wrp{
+    width:1300px;
+    margin: 5px;
+    
+}
+.video{
+    margin-left:150px;
+}
+
+.video2{
+	background-color: #f5f6f7;
+	border:2px solid orange;
+float:right;
+} 
+
+#audiofig{
+	margin-top:50px;
+	font-size:30px;
+	font-weight:bold;
+	color:blue;
+	
+}
+
+.video3{
+	background-color: #f5f6f7;
+	border:2px solid orange;
+	margin:0px 540px 0px 0px;
+	
+} 
+
+#audiofig1{
+	margin-top:50px;
+	font-size:30px;
+	font-weight:bold;
+	color:blue;
+	
+}
+.column {
+  float: left;
+  width: 30%;
+  padding:10px;
+  margin: 5px;
+  height:450px;
+  background-color: #023563;
+}
+.column h2{
+    color:white;
+    font-size:30px;
+    padding: 10px;
+}
+.column p{
+    color:white;
+    font-size: 20px;
+    padding: 10px;
+}
+.newest_services h1{
+    text-align: center;
+    color: #023563 ;
+    border: 3px solid #cc6c06;
+    border-radius: 8px;
+    background-color: #cc6c06;
+    padding: 10px;
+}
+.butoni{
+    background-color: #cc6c06;
+    border: 3px solid #cc6c06;
+    border-radius: 4px;
+    padding: 5px;
+    margin:15px;
+}
+.six h1{
+    text-align: center;
+    margin-top: 10px;
+    color: #001f63;
+}
+.kolona1{
+  float: left;
+  width: 30%;
+  padding:15px;
+    margin-top: 10px;
+}
+.kolona1 p{
+    color: #001f63;
+}
+.kolona1 h2{
+     color: #001f63;
+}
+#half{
+   
+  margin-bottom: -10px;
+  margin-right: 5px;
+    
+}
+#moon{
+    margin-bottom: -10px;
+    margin-right: 5px;
+}
+#clock{
+    margin-bottom: -10px;
+    margin-right: 5px;
+}
+#star{
+    margin-bottom: -10px;
+    margin-right: 5px;
+}
+#leaf{
+    margin-bottom: -10px;
+    margin-right: 5px;
+}
+#heart{
+    margin-bottom: -10px;
+    margin-right: 5px;
+}
+#svg{
+    margin-left: 0px;
+}
+#awning_cleaning{
+   background: lightblue url("awning_clean.jpg") center no-repeat ;
+   background-size: 400px 500px;
+
+
+}
+#high_dusting{
+   background: lightblue url("high_dust.jpg") center no-repeat  ;
+   background-origin: content-box;
+}
+#holiday{
+   background: lightblue url("christmas.jpg") center no-repeat ;
+   background-size: 400px 500px;
+
+}
+.multiple_images{
+    margin: 8px;
+    width: 1140px;
+    height: 300px;
+    background-image: url(cleaning_people.png);
+    background-size: 300px;
+    background-repeat: repeat;
+}
+#search_button{
+   margin-bottom: 5px; 
+    margin-left: 20px;
+    padding: 3px;
+}
+/*fundi*/
 div.wrapper{
     display:block; 
     width:100%; 
@@ -209,209 +412,3 @@ input, textarea{
     background-color : #404241; 
     border:none;
 }
-
-
-.wpb_wrapper{
-    margin: 20px ;
-    padding: 10px;
-    font-family: sans-serif;
-    font-size: 20px;;
-    
-    
-}
-.wpb_list ul li{
-    padding: 10px;
-    color: goldenrod;
-    margin: 5px 5px 5px 30px;
-}
-#wip{
-    border-top: 3px solid goldenrod;
-    padding-top: 40px;
-    margin-top: 30px;
-}
-.wpb_wrapper h2{
-    font-family: sans-serif;
-    font-size: 35px;
-}
-.table_wrapper{
-    
-     margin-right: 10px;
-    padding-right:10px;
-    
-    
-}
-.table_wrapper p{
-margin-left:1000px;
-font-size:20px;
-font-weight:bold;
-}
-.table_rows{
-    margin: 20px;
-    font-family: sans-serif;
-    padding: 15px;
-}
-
-.table_1{
-    border: 4px solid goldenrod;
-    border-radius: 5px;
-    width: 300px;
-    float: left;
-    margin: 40px 0px 0px 0px;
-padding-right:10px;
-}
-#table_img{
-    padding: 10px;
-    margin-right: 5px;
-    float: left;
-}
-.content1_wrapper{
-    margin-left: 40px;
-    width:800px;
-    float: left;
-}
-.all_wrp{
-    width:1300px;
-    margin: 5px;
-    
-}
-.video{
-    margin-left: 150px;
-	margin-bottom:20px;
-}
-
-.video2{
-	background-color: #f5f6f7;
-	border:2px solid orange;
-float:right;
-} 
-
-#audiofig{
-	margin-top:50px;
-	font-size:30px;
-	font-weight:bold;
-	color:blue;
-	
-}
-
-.video3{
-	background-color: #f5f6f7;
-	border:2px solid orange;
-	margin:0px 540px 0px 0px;
-	
-} 
-
-#audiofig1{
-	margin-top:50px;
-	font-size:30px;
-	font-weight:bold;
-	color:blue;
-	
-}
-.column {
-  float: left;
-  width: 30%;
-  padding:10px;
-  margin: 5px;
-  height:450px;
-  
-}
-.column h2{
-    color:white;
-    font-size:30px;
-    padding: 10px;
-}
-.column p{
-    color:white;
-    font-size: 20px;
-    padding: 10px;
-}
-.newest_services h1{
-    text-align: center;
-    color: #023563 ;
-    border: 3px solid #cc6c06;
-    border-radius: 8px;
-    background-color: #cc6c06;
-    padding: 10px;
-}
-.butoni{
-    background-color: #cc6c06;
-    border: 3px solid #cc6c06;
-    border-radius: 4px;
-    padding: 5px;
-    margin:15px;
-}
-.six h1{
-  text-align: center;
-    margin-top: 10px;
-    color: #001f63;
-}
-.kolona1{
-  float: left;
-  width: 30%;
-  padding:15px;
-    margin-top: 10px;
-}
-.kolona1 p{
-    color: #001f63;
-}
-.kolona1 h2{
-     color: #001f63;
-}
-#half{
-   
-  margin-bottom: -10px;
-  margin-right: 5px;
-    
-}
-#moon{
-    margin-bottom: -10px;
-    margin-right: 5px;
-}
-#clock{
-    margin-bottom: -10px;
-    margin-right: 5px;
-}
-#star{
-    margin-bottom: -10px;
-    margin-right: 5px;
-}
-#leaf{
-    margin-bottom: -10px;
-    margin-right: 5px;
-}
-#heart{
-    margin-bottom: -10px;
-    margin-right: 5px;
-}
-#svg{
-    margin-left: 0px;
-}
-#awning_cleaning{
-   background: lightblue url("images/awning_clean.jpg") center no-repeat ;
-   background-size: 400px 500px;
-
-
-}
-#high_dusting{
-   background: lightblue url("images/high_dust.jpg") center no-repeat  ;
-   background-origin: content-box;
-}
-#holiday{
-   background: lightblue url("images/christmas.jpg") center no-repeat ;
-   background-size: 400px 500px;
-
-}
-.multiple_images{
-    margin: 8px;
-    width: 1225px;
-    height: 300px;
-    background-image: url(images/cleaning_people.png);
-    background-size: 300px;
-    background-repeat: repeat;
-}
-#search_button{
-   margin-bottom: 5px; 
-    margin-left: 20px;
-    padding: 3px;
-}
-
