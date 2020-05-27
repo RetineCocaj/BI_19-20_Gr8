@@ -36,7 +36,7 @@ header span {
 #mydiv {
   font-variant-caps:titling-caps;
   font-size: 2em; 
-	padding-left:10px;  
+  padding-left:10px;  
   }
 .nav{ 
     display: inline-block;
@@ -96,7 +96,6 @@ header span {
 	overflow: visible;
 	padding-left: 0px !important;
 }
-
 .nav ul li ul li:hover{
 		background:#e3e3e3;
 }
@@ -106,105 +105,7 @@ header span {
 	visibility:visible;
 	
 }
-div.wrapper{
-    display:block; 
-    width:100%; 
-    height: 360px;
-    margin:10px 0px 0px 0px; 
-    padding:0; 
-    text-align:left;
-    background-color:#333333;
-}
-
-nav ul{
-    margin:0; 
-    padding:0; 
-    list-style:none;
-}
-    
-
-.block{
-    
-    width:25%;
-    float:left;
-    text-align: left;
-    color: black;
-   
-}
-.block a:link{
-color:peru;
-}
-.block ul{
-    margin: 0;
-    padding:0;
-    list-style: none; 
-    color:darkgrey;
-}
-.block h2{
-    
-    color:whitesmoke;
-}
-#footer{
-    width: 100%;
-    height: 300px;
-    margin: 0px 0px 0px 20px;
-}
-
-#block2 ul li{
-    border-bottom: 1px solid dimgrey;
-    margin: 5px;
-    padding: 7px 7px 15px 7px;
-  
-}
-#block2 ul a{
-    margin: 5px;
-    padding: 0px 0px 10px 5px;
-    text-decoration: none;
-  
-}
-#block2 ul a:visited{
-    color:peru;
-}
-
-#block3 ul a{
-    text-align: right;
-    padding: 10px 0px 10px 160px;
-    margin: 5px;
-    text-decoration: none;
-   
-}
-#block3 ul a:visited{
- color:peru;
-}
-#block3 ul li{
-    margin: 5px 5px 5px 15px;
-}
-#block3 h2{
-    margin-left: 10px;
-}
-#submit{
-    color: white;
-    background-color: peru;
-    border-radius: 6px;
-   width:30%;
-   text-transform:uppercase;
-	font-family:"Garamond";
-}
-#footer input[name="text1"]{
-	width:80%;
-    padding: 5px;
-    border-radius: 5px;
-    background-color : #404241; 
-    border:none;
-
-}
-input, textarea{
-    width:80%;
-    padding: 5px;
-    border-radius: 5px;
-    background-color : #404241; 
-    border:none;
-}
+/*permbajtja*/
 #date{
 margin-left:1000px;
 font-size:20px;
@@ -219,12 +120,9 @@ font-weight:bold;
     width:46%;
     font-family:sans-serif;
     background-color: #1056c2;
-	margin-top:25px;
+margin-top:25px;
     height: 700px;
-   
-    
-   
-  
+	
 }
 .window_washing_text p{
     
@@ -233,6 +131,7 @@ font-weight:bold;
     margin: 10px;
     font-size: 22px;
     color: white;
+		
   
 }
 .window_washing_text h2{
@@ -240,13 +139,13 @@ font-weight:bold;
     margin: 20px 5px 5px 10px;
     font-size: 40px;
     color: white;
-
     
 }
 .window_washing_img{
-   margin-top:0px;
+    margin-top:0px;
     width:20px;
     background-color: aliceblue;
+  
     
     
 }
@@ -335,7 +234,7 @@ font-weight:bold;
     color: white;
 }
 .ice_removal{
-    width:92%;
+    width: 92%;
 }
 .ice_img{
     float: right;
@@ -377,7 +276,7 @@ font-weight:bold;
     height: 600px;
 }
 .caulking_text p{
-    font-size: 25px;
+   font-size: 25px;
     padding: 25px 20px 20px 30px;
     color: white;
     
@@ -391,13 +290,12 @@ font-weight:bold;
 #canvas1{
     width:1150px;
     height: 250px;
-    margin-left: 10px; 
+    margin-left: 10px;
 }
 #canvas2{
     width:1135px;
     height:250px;
    margin-left: 10px;
-    
 }
 .market_text{
     width:250px;
@@ -415,11 +313,11 @@ font-weight:bold;
     height: 160px;
     border: 7px solid #76b8f5;
     border-radius: 5px;
- border-image: url(images/3.jpg) 20 round;
- outline: 5px dashed blue;
-  outline-offset: 5px;
- resize: both;
-overflow: auto;
+	border-image: url(3.jpg) 20 round;
+	outline: 5px dashed blue;
+	outline-offset: 5px;
+	resize: both;
+	overflow: auto;
     font-family: "Presley Slab", sans-serif;
 }
 #box1, #box2{
@@ -433,6 +331,7 @@ overflow: auto;
     padding: 5px;
     padding-left: 7px;
 }
+
 .market_text h2{
     font-size: 30px;
     color: #074985;
@@ -452,7 +351,7 @@ overflow: auto;
 }
 @font-face {
   font-family: myFont;
-  src: url(fonts/BebasNeue-Regular.otf);
+  src: url(BebasNeue-Regular.otf);
 }
 
 .pjesa_pare h1{
@@ -485,23 +384,6 @@ overflow: auto;
     margin-left: 50px;
     margin-bottom: 2px;
 }
-
-#video2{
-     margin-top: 60px;
-    margin-left: 265px;
-    
-    
-}
-.vid2 h2{
-    margin-top: 60px;
-    margin-bottom: -30px;
-    text-align: center;
-    font-family: myFont;
-    font-size: 50px;
-    color: #030a59;
-    text-shadow: 2px 2px #5b9df5;
-    
-}
 #nr1:hover{
 transform: scale3d(1.5,1.5,3);
 -ms-transform: scale3d(1.5,1.5,3);
@@ -522,6 +404,11 @@ transform: scale3d(2,2,3);
 -ms-transform: scale3d(1.5,1.5,3);
 -webkit-transform: scale3d(1.5,1.5,3); 
 }
+#video2{
+	 margin-top: 60px;
+    margin-left: 265px;
+    
+}
 .multicolumn{
   border: 4px solid darkblue;
   column-count: 3;
@@ -530,14 +417,14 @@ transform: scale3d(2,2,3);
   column-rule-width: 4px;
   column-rule-color:darkblue;
   column-width: 150px;
-    
+
   -webkit-column-count: 3;
   -webkit-column-gap: 30px;
   -webkit-column-rule-style: solid;
   -webkit-column-rule-width: 4px;
   -webkit-column-rule-color:darkblue;
   -webkit-column-width: 150px;
-    
+
   -moz-column-count: 3;
   -moz-column-gap: 30px;
   -moz-column-rule-style: solid;
@@ -546,7 +433,7 @@ transform: scale3d(2,2,3);
    -moz-column-width: 150px;
     margin: 20px;
     margin-top: 40px;
-    
+
 }
 .multicolumn h2{
     color: #1278c7;
@@ -575,4 +462,117 @@ transform: scale3d(2,2,3);
 }
 .statistics #uri_text{
     background-color: skyblue;
+}
+.vid2 h2{
+    margin-top: 60px;
+    margin-bottom: -30px;
+    text-align: center;
+    font-family: myFont;
+    font-size: 50px;
+    color: #030a59;
+    text-shadow: 2px 2px #5b9df5;
+    
+}
+
+/*pjesa fundit*/
+
+div.wrapper{
+    display:block; 
+    width:100%; 
+    height: 360px;
+    margin:10px 0px 0px 0px; 
+    padding:0; 
+    text-align:left;
+    background-color:#333333;
+}
+
+nav ul{
+    margin:0; 
+    padding:0; 
+    list-style:none;
+}
+    
+
+.block{
+    
+    width:25%;
+    float:left;
+    text-align: left;
+    color: black;
+   
+}
+.block a:link{
+color:peru;
+}
+.block ul{
+    margin: 0;
+    padding:0;
+    list-style: none; 
+    color:darkgrey;
+}
+.block h2{
+    
+    color:whitesmoke;
+}
+/*Footer*/
+#footer{
+    width: 100%;
+    height: 300px;
+    margin: 0px 0px 0px 20px;
+}
+
+#block2 ul li{
+    border-bottom: 1px solid dimgrey;
+    margin: 5px;
+    padding: 7px 7px 15px 7px;
+  
+}
+#block2 ul a{
+    margin: 5px;
+    padding: 0px 0px 10px 5px;
+    text-decoration: none;
+  
+}
+#block2 ul a:visited{
+    color:peru;
+}
+
+#block3 ul a{
+    text-align: right;
+    padding: 10px 0px 10px 160px;
+    margin: 5px;
+    text-decoration: none;
+   
+}
+#block3 ul a:visited{
+ color:peru;
+}
+#block3 ul li{
+    margin: 5px 5px 5px 15px;
+}
+#block3 h2{
+    margin-left: 10px;
+}
+#submit{
+    color: white;
+    background-color: peru;
+    border-radius: 6px;
+   width:30%;
+   text-transform:uppercase;
+	font-family:"Garamond";
+}
+#footer input[name="text1"]{
+	width:80%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color : #404241; 
+    border:none;
+
+}
+input, textarea{
+    width:80%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color : #404241; 
+    border:none;
 }
