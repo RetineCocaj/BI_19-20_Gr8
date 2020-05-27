@@ -415,8 +415,30 @@
                             <li>Email:<a href=mailto:>contact@mydomail.com</a> </li>
                             <br>
                             <li><strong>Office Hours</strong></li>
-                            <li>Monday- Friday :08:00-17:30</li>
-                            <li>Saturday: 08-13:00</li>
+                                                      <?php
+						   class Office {
+  // Properties
+  public $name;
+ // public $color;
+
+  // Methods
+  function set_name($name) {
+    $this->name = $name;
+  }
+  function get_name() {
+    return $this->name;
+  }
+  }
+
+$mf = new Office();
+$s = new Office();
+$mf->set_name('Monday- Friday :08:00-17:30');
+$s->set_name('Saturday: 08-13:00');
+
+echo $mf->get_name();
+echo "<br>";
+echo $s->get_name();
+?>
                         </ul>
                     </nav>
 
