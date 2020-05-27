@@ -25,17 +25,17 @@
 
             <ul>
 
-                <li> <a href="HomePage.html">Homepage</a></li>
+                <li> <a href="HomePage.php">Homepage</a></li>
 
-                <li> <a href="StyleDemo.html">Our Company</a></li>
+                <li> <a href="StyleDemo.php">Our Company</a></li>
 
-                <li> <a href="FullWidth.html">Book Now</a></li>
+                <li> <a href="FullWidth.php">Book Now</a></li>
 
-                <li> <a href="Gallery.html">Gallery</a></li>
+                <li> <a href="Gallery.php">Gallery</a></li>
 
                 <li> <a href="#">About Us</a>
                     <ul>
-                        <li><a href="AboutUs.html">&emsp;Service</li>
+                        <li><a href="AboutUs.php">&emsp;Service</li>
 						<li><a href="#">Safety</li>
 						<li><a href="#">Area</li>
 						</ul> 
@@ -119,7 +119,7 @@
         <div class="video">
 
             <video width="600" height="400" controls>
-			<source src="images/videos/video1.mp4" type="video/mp4"></video>
+			<source src="videos/video1.mp4" type="video/mp4"></video>
 
 
         </div>
@@ -129,7 +129,7 @@
                 <figcaption id="audiofig"><em>Room Tone Kitchen Sound Effect</em></figcaption>
 
                 <audio controls>
-			<source src="images/kitchen.mp3" type="audio/mpeg">
+			<source src="audio/kitchen.mp3" type="audio/mpeg">
 			
 			</audio>
             </figure>
@@ -140,7 +140,7 @@
                 <figcaption id="audiofig"><em>Hand wash basin fill to let third run full...</em></figcaption>
                 <audio controls>
 			
-			<source src="images/handwash.mp3" type="audio/mpeg">
+			<source src="audio/handwash.mp3" type="audio/mpeg">
 			</audio>
             </figure>
         </div>
