@@ -279,7 +279,22 @@
                     <h2>From The Blog</h2>
                     <nav>
                         <ul>
-                            <li><strong>Blog Post Title</strong></li>
+                                                       <?php
+class Blog {
+  public $name;
+
+  function __construct($name) {
+    $this->name = $name; 
+  }
+  function get_name() {
+    return $this->name;
+  }
+}
+
+$post = new Blog("<strong>&nbsp;&nbsp;&nbsp;Blog Post Title</strong>");
+echo $post->get_name();
+?>
+ 
                             <li>Posted by Admin on 03.01.2020</li>
                             <li>
                                 <p>Cleanliness must be observed in a learning envionment. Clean environment</p>
