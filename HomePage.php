@@ -73,8 +73,8 @@
                         <img src="images/a.jpg">
                     </div>
 
-                    <button class="prew" onclick="prewImage()">  </button>
-                    <button class="next" onclick="nextImage()">  </button>
+                    <button class="prew" onclick="prewImage()"> < </button>
+                    <button class="next" onclick="nextImage()"> > </button>
                 </div>
 
                 <script type="text/javascript">
@@ -94,7 +94,8 @@
                         } else {
                             i = 1;
                         }
-                        slider_content.innerHTML = '<img src="images/' + image[i - 1] + '.jpg">';
+                        slider_content.innerHTML = "<img src="
+                        images / +image[i - 1] + ".jpg>";
                     }
 
 
@@ -107,7 +108,8 @@
                         } else {
                             i = image.length;
                         }
-                        slider_content.innerHTML = '<img src="images/' + image[i - 1] + '.jpg">';
+                        slider_content.innerHTML = "<img src="
+                        images / +image[i - 1] + ".jpg>";
 
                     }
                     //Pjesa e fotove me shkrim read more-->
@@ -369,12 +371,27 @@
                     <h2>Contact Us</h2>
                     <nav>
 
-                        <form>
-                            <p><input id="nameinput" type="text" placeholder="Name"></p>
-                            <p><input id="email" type="text" placeholder="Email"></p>
-                            <p><textarea placeholder="Message" rows="3"></textarea></p>
-                            <p><input id="submit" type="submit"></p>
+                        <form action="saveMessages()" method="post">
+                            <p><input id="nameinput" name="name" type="text" placeholder="Name"></p>
+                            <p><input id="email" name="email" type="text" placeholder="Email"></p>
+                            <p><textarea placeholder="Message" name="message" rows="3"></textarea></p>
+                            <p><input id="submit" type="submit" name="submit"></p>
                         </form>
+                        <?php
+                        function saveMessages(){
+                            if(isset($_POST['submit'])){
+                                $name = $_POST["name"];
+                                $email = $_POST["email"];
+                                $msg = $_POST["message"];
+
+                                $myfile = fopen("testfile.txt", "w") or die("Unable to open file!");
+                                $txt = $name." contacted us with email ".$email.", and said \"".$msg."\"\n";
+                                fwrite($myfile, $txt);
+                                fclose($myfile);
+
+                            }
+                        }
+                        ?>
                     </nav>
                 </section>
             </div>

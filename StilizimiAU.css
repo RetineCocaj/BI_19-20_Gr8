@@ -56,9 +56,9 @@ header span {
 }
 
 .nav ul li {
-    display: inline-block;
     position: relative;
     padding: 15px 20px;
+    float: left;
 }
 
 .nav ul li a {

@@ -164,7 +164,7 @@ label {
     width: 20px;
 }
 
-input[name="title"] {
+.title {
     margin-left: 50px;
     border: 1px solid #ccc;
     border-radius: 2px;
