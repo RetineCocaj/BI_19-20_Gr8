@@ -343,7 +343,29 @@
                     <h2>From The Blog</h2>
                     <nav>
                         <ul>
-                            <li><strong>Blog Post Title</strong></li>
+                            <?php
+class Blog {
+  public $name;
+  public function __construct($name) {
+    $this->name = $name;
+    //$this->color = $color; 
+  }
+  public function intro() {
+    echo "<strong>Title{$this->name}</strong>"; 
+  }
+}
+
+// Title is inherited from Blog
+class Title extends Blog {
+  public function message() {
+    echo "<strong>&nbsp;&nbsp;&nbsp;Blog Post</strong> "; 
+  }
+}
+
+$t = new Title(" ");
+$t->message();
+$t->intro();
+?>
                             <li>Posted by Admin on 03.01.2020</li>
                             <li>
                                 <p>Cleanliness must be observed in a learning envionment. Clean environment</p>
