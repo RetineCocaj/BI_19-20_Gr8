@@ -9,7 +9,15 @@ background-color:#D7D7D7;
     margin-right:90px;
     background-color:white;
 }
-
+#loc_t{
+    width: 250px;
+    word-wrap: break-word;
+    color: midnightblue;
+}
+#location{
+    margin-right: 5px;
+    float: left;
+}
 .top{
     background-color:#616161;
     font-family:"Garamond";
@@ -33,20 +41,24 @@ header > h1 {
 header span {
 	margin-left:0;
    	font-size:0.9em;
-	padding-left:10px;
+	padding-left:10px;  
 }
 #mydiv {
   font-variant-caps:titling-caps;
   font-size: 2em; 
-  padding-left:10px;
+  padding-left:10px;  
   }
 
 
-.firstpart{
-    padding: 20px 20px 0 20px;
-    margin: 10px 10px 0 10px;
+.bodypart{
+    
+    text-align: center;
+    color: gray;
+    padding: 1em 4em;
+     border-bottom:1px solid gray;
+     font-style: italic;
 }
-
+  
 .nav{ 
     display: inline-block;
 	border-top: 1px solid #9A9A9A;
@@ -115,16 +127,13 @@ header span {
 	visibility:visible;
 	
 }
+ 
+/*permbajtja*/ 
+
 .firstline{
     line-height: 32px;
     margin: 10px ;
     padding:50px ; 	
-}
-.firstline #date{
-	float:right;
-	margin-right:10px;
-	font-size:20px;
-	font-weight:bold;
 }
 .firstline h6{
 	margin-left:50px;
@@ -164,6 +173,16 @@ input[name="title"]{
 	box-shadow: none;
     background-color: transparent;
 }
+input[name="usr_name"]{
+	margin-left:50px;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+    font-size: 16px;
+    height: 24px;
+    padding: 4px;
+	box-shadow: none;
+    background-color: transparent;
+}
 .formControl{
     
     height: 34px;
@@ -181,6 +200,7 @@ input[name="title"]{
 #title1 { width: 38%}
 #title2 { width: 22%}
 #titlee{ width: 85% }
+
 
 input:focus:required:invalid {
    border: 2px solid red !important;
@@ -263,7 +283,6 @@ h4{
 	height:50px;
     margin:50px;
 }
-
 #pw span{
 	margin-left: 50px;
 }
@@ -300,13 +319,33 @@ input[id="num3"]{
     box-shadow: none;
     background-color: transparent;
 }
-
-
 #Anash p{
 	 line-height: 22px;
 	 font-size:15px;
 	
 }
+#Anash h2{
+	word-wrap: break-word;
+}
+.firstline #date{
+	float:right;
+	margin-right:10px;
+	font-size:20px;
+	font-weight:bold;
+}
+.linear_gradient{
+    width: 1200;
+    height: 70px;
+    background-image: linear-gradient(-90deg, #003a87, #4f9ee8, #edb739, #f09516, #a8fbff);
+
+}
+.radial_gradient{
+    margin-left: 830px;
+    width: 300px;
+    height: 30px;
+  background-image: repeating-radial-gradient(#003a87, #f09516 10%, #edb739 15%,#a8fbff,#4f9ee8);
+}
+/*pjesa fundit*/
 
 div.wrapper{
     display:block; 
@@ -333,11 +372,9 @@ nav ul{
     color: black;
    
 }
-
 .block a:link{
 color:peru;
 }
-
 .block ul{
     margin: 0;
     padding:0;
@@ -348,7 +385,7 @@ color:peru;
     
     color:whitesmoke;
 }
- 
+/*Footer*/
 #footer{
     width: 100%;
     height: 300px;
@@ -391,13 +428,12 @@ color:peru;
     color: white;
     background-color: peru;
     border-radius: 6px;
-	width:30%;
+   width:30%;
    text-transform:uppercase;
 	font-family:"Garamond";
-   
 }
 #footer input[name="text1"]{
-    width:80%;
+	width:80%;
     padding: 5px;
     border-radius: 5px;
     background-color : #404241; 
@@ -406,7 +442,7 @@ color:peru;
 }
 input, textarea{
     width:80%;
-     padding: 5px;
+    padding: 5px;
     border-radius: 5px;
     background-color : #404241; 
     border:none;
@@ -448,26 +484,4 @@ input, textarea{
 }
 #ContactDetails a:hover{
     color:goldenrod;   
-}
-.linear_gradient{
-    width: 1200;
-    height: 70px;
-    background-image: linear-gradient(-90deg, #003a87, #4f9ee8, #edb739, #f09516, #a8fbff);
-
-}
-.radial_gradient{
-    margin-left: 830px;
-    width: 300px;
-    height: 30px;
-  background-image: repeating-radial-gradient(#003a87, #f09516 10%, #edb739 15%,#a8fbff,#4f9ee8);
-}
-
-#loc_t{
-    width: 250px;
-    word-wrap: break-word;
-    color: midnightblue;
-}
-#location{
-    margin-right: 5px;
-    float: left;
 }
