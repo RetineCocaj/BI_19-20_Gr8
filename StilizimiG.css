@@ -115,7 +115,7 @@ header span {
 	
 	font-size:30px;
 }
-#date{
+ #date{
 	margin-top:0;
 	margin-left:1000px;
 	font-size:20px;
@@ -410,6 +410,12 @@ display:inline;
 	font-weight:normal;
 	font-size:20px;
 }
+.wrp5 h1{
+	color:#787878;
+	margin-left:30%;
+	font-weight:normal;
+	font-family: Arial, Helvetica, sans-serif;
+}
 .wrp5 ul {
 	margin-top:50px;
     list-style: none;
@@ -425,27 +431,6 @@ display:inline;
     margin-right: 20px;
 	font-weight:bold;
 	font-size:35px;
-}
-input[id="guess"]{
-	margin-left:90px;
-	border: 1px solid #ccc;
-	border-radius: 2px;
-    font-size: 16px;
-    height: 24px;
-    padding: 4px;
-	box-shadow: none;
-	text-align:center;
-    background-color: white;
-}
-#checkGuess{
-	margin-top:10px;
-	font-size:20px;
-	margin-left:45%;
-	border-radius:10%;
-	width:100px;
-	height:50px;
-	background-color: green;
-	color:white;
 }
 
 input[value="Start"]{
@@ -485,6 +470,7 @@ input[value="Stop"]{
     background-color: white;
 }
 
+
 #timerBackground p{
 	margin-left:190px;
 	font-size:20px;
@@ -493,12 +479,80 @@ input[value="Stop"]{
 	margin-left:190px;
 }
 
+@keyframes  animacioni{
+   0%  {background-color: #8acde3;}
+  25%  {background-color: #8ae3ca;}
+  50%  {background-color: #77e686;}
+  75%  {background-color: #35fcef;}
+  100% {background-color: #8ae6b0;}
+}
+
+.container1 h3{
+  width: 620px;
+  height: 40px;
+  padding-top: 5px;
+  padding-left: 6px;
+  background-color: whitesmoke;
+  background-attachment: fixed;
+  animation-name: animacioni;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+
+}
+#fam:hover{
+ transform:translate(50px,50px);
+-ms-transform:translate(50px,50px); 
+-webkit-transform:translate(50px,50px); 
+}
+#book_img:hover{
+transform:rotate(180deg);
+-ms-transform:rotate(180deg); 
+-webkit-transform:rotate(180deg);
+}
+#weclean:hover{
+
+transform:scale(1.5,1.5);
+-ms-transform:scale(1.5, 1.5); 
+-webkit-transform:scale(1.5, 1.5); 
+}
+#werelax:hover{
+ transform:skew(-10deg, 10deg);
+-ms-transform:skew(-10deg, 10deg);
+-webkit-transform:skew(-10deg, 10deg);
+}
+#professional:hover{
+transform:rotateX(150deg);
+-ms-transform:rotateX(150deg); 
+-webkit-transform:rotateX(150deg);
+}
+#reliable:hover{
+transform:rotateY(150deg);
+-ms-transform:rotateY(150deg); 
+-webkit-transform:rotateY(150deg);
+}
+#nicole:hover{
+transform:scaleX(-1);
+-ms-transform:scaleX(-1); 
+-webkit-transform:scaleX(-1);
+
+}
+.svg_stars{
+    margin-top: 100px;
+    width: 18%;
+    margin-left: 19.8px;
+} 
+#ranked{
+    margin-top: 30px;
+    margin-left: 350px;
+    color: skyblue;
+}
 /*fundi*/
 div.wrapper{
     display:block; 
     width:100%; 
     height: 360px;
-    margin:0px 0px 0px 0px; 
+    margin:10px 0px 0px 0px; 
     padding:0; 
     text-align:left;
     background-color:#333333;
@@ -592,71 +646,3 @@ input, textarea{
     background-color : #404241; 
     border:none;
 }
-@keyframes  animacioni{
-   0%  {background-color: #8acde3;}
-  25%  {background-color: #8ae3ca;}
-  50%  {background-color: #77e686;}
-  75%  {background-color: #35fcef;}
-  100% {background-color: #8ae6b0;}
-}
-
-.container1 h3{
-  width: 620px;
-  height: 40px;
-  padding-top: 5px;
-  padding-left: 6px;
-  background-color: whitesmoke;
-  animation-name: animacioni;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
-
-}
-#fam:hover{
- transform:translate(50px,50px);
--ms-transform:translate(50px,50px); 
--webkit-transform:translate(50px,50px); 
-}
-#book_img:hover{
-transform:rotate(180deg);
--ms-transform:rotate(180deg); 
--webkit-transform:rotate(180deg);
-}
-#weclean:hover{
-    
-transform:scale(1.5,1.5);
--ms-transform:scale(1.5, 1.5); 
--webkit-transform:scale(1.5, 1.5); 
-}
-#werelax:hover{
- transform:skew(-10deg, 10deg);
--ms-transform:skew(-10deg, 10deg);
--webkit-transform:skew(-10deg, 10deg);
-}
-#professional:hover{
-transform:rotateX(150deg);
--ms-transform:rotateX(150deg); 
--webkit-transform:rotateX(150deg);
-}
-#reliable:hover{
-transform:rotateY(150deg);
--ms-transform:rotateY(150deg); 
--webkit-transform:rotateY(150deg);
-}
-#nicole:hover{
-transform:scaleX(-1);
--ms-transform:scaleX(-1); 
--webkit-transform:scaleX(-1);
-
-}
-.svg_stars{
-    margin-top: 100px;
-    width: 18%;
-    margin-left: 20px;
-} 
-#ranked{
-    margin-top: 30px;
-    margin-left: 350px;
-    color: skyblue;
-}
-
