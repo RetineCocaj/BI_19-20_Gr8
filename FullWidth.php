@@ -408,7 +408,6 @@ if ($conn->query($sqlQuery) === TRUE) {
     echo '</script>'; 
   }
 
-
 $conn->close();
 }
 ?>
