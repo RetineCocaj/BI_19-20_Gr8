@@ -119,7 +119,7 @@
         <div class="video">
 
             <video width="600" height="400" controls>
-			<source src="images/videos/video1.mp4" type="video/mp4"></video>
+			<source src="videos/video1.mp4" type="video/mp4"></video>
 
 
         </div>
@@ -129,7 +129,7 @@
                 <figcaption id="audiofig"><em>Room Tone Kitchen Sound Effect</em></figcaption>
 
                 <audio controls>
-			<source src="images/kitchen.mp3" type="audio/mpeg">
+			<source src="audio/kitchen.mp3" type="audio/mpeg">
 			
 			</audio>
             </figure>
@@ -140,7 +140,7 @@
                 <figcaption id="audiofig"><em>Hand wash basin fill to let third run full...</em></figcaption>
                 <audio controls>
 			
-			<source src="images/handwash.mp3" type="audio/mpeg">
+			<source src="audio/handwash.mp3" type="audio/mpeg">
 			</audio>
             </figure>
         </div>

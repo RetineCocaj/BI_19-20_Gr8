@@ -317,7 +317,7 @@ header span {
     margin: 8px;
     width: 1140px;
     height: 300px;
-    background-image: url(cleaning_people.png);
+    background-image: url("images/cleaning_people.png");
     background-size: 300px;
     background-repeat: repeat;
 }
