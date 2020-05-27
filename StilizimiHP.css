@@ -1,446 +1,460 @@
-body{
-
-font-family: "Garamond" sans-serif ;
-background-color:#D7D7D7;
-}
-.Margin{
-	margin-left:90px;
-    margin-right:90px;
-	background-color:white;
+body {
+    font-family: "Garamond" sans-serif;
+    background-color: #D7D7D7;
 }
 
-.top{
-    
-    font-family:"Garamond";
+.Margin {
+    margin-left: 90px;
+    margin-right: 90px;
+    background-color: white;
+}
+
+.top {
+    font-family: "Garamond";
     text-align: left;
     font-size: 100%;
     font-weight: italic;
     color: dimgrey;
     padding: 0 1em 0 1em;
-        
 }
-header {
-	border-bottom: 0 solid #000; 
-	padding-bottom: 45px;
-	
-	
-}
-header > h1 {
-	display: inline-block;
-    color: #383939; 
-}
-header span {
-	margin-left:0;
-   	font-size:0.9em;
-	padding-left:10px;  
-}
-#mydiv {
-  font-variant-caps:titling-caps;
-  font-size: 2em;
-  padding-left:10px;  
- }
 
-.nav{ 
-    display: inline-block;
-	border-top: 1px solid #9A9A9A;
-	width:100%;
-    border-bottom: 1px solid #9A9A9A;
-    
-	
+header {
+    border-bottom: 0 solid #000;
+    padding-bottom: 45px;
 }
-.nav ul{
+
+header>h1 {
+    display: inline-block;
+    color: #383939;
+}
+
+header span {
+    margin-left: 0;
+    font-size: 0.9em;
+    padding-left: 10px;
+}
+
+#mydiv {
+    font-variant-caps: titling-caps;
+    font-size: 2em;
+    padding-left: 10px;
+}
+
+.nav {
+    display: inline-block;
+    border-top: 1px solid #9A9A9A;
+    width: 100%;
+    border-bottom: 1px solid #9A9A9A;
+}
+
+.nav ul {
     display: inline;
     list-style: none;
-	text-align:left;
-	margin:0;
-	padding:0;
+    text-align: left;
+    margin: 0;
+    padding: 0;
 }
 
-.nav ul li{
-	dispaly:inline-block;
-	position:relative;
-	padding:15px 20px;	
-	float: left;
-	
+.nav ul li {
+    position: relative;
+    padding: 15px 20px;
+    float: left;
 }
-.nav ul li a{
-	color:grey;
+
+.nav ul li a {
+    color: grey;
     padding: 25px 20px;
-    padding-left:  0px;
+    padding-left: 0px;
     text-decoration: none;
     text-transform: uppercase;
-	
-	
-	
-}
-.nav a:hover{
-	color:goldenrod;
 }
 
-.nav ul li:hover{
-
-	color:goldenrod;
-}
-.nav ul li ul{
-	position:absolute;
-	top:50px;
-	left:0px;
-	dispaly:none;
-	visibility:hidden;
-	
-
-}
-.nav ul li ul li{
-	background:#ddd;
-	dispaly:block;
-	height:20px;
-	width:150px;
-	overflow: visible;
-	padding-left: 0px !important;
+.nav a:hover {
+    color: goldenrod;
 }
 
-.nav ul li ul li:hover{
-		background:#e3e3e3;
-}
-.nav ul li:hover ul{
-	dispaly:block;
-	opacity:1;
-	visibility:visible;
+.nav ul li:hover {
+    color: goldenrod;
 }
 
+.nav ul li ul {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    display: none;
+    visibility: hidden;
+}
 
-.bodypart{
-    
+.nav ul li ul li {
+    background: #ddd;
+    display: block;
+    height: 20px;
+    width: 150px;
+    overflow: visible;
+    padding-left: 0px !important;
+}
+
+.nav ul li ul li:hover {
+    background: #e3e3e3;
+}
+
+.nav ul li:hover ul {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.bodypart {
     text-align: center;
     color: gray;
     padding: 1em 4em;
-    border-bottom:1px solid #9A9A9A;
+    border-bottom: 1px solid #9A9A9A;
     font-style: italic;
 }
-.firstpart{
+
+.firstpart {
     padding: 20px 20px 0 20px;
     margin: 10px 10px 0 10px;
-	
 }
 
-.firstpart span{
-	display:block;
+.firstpart span {
+    display: block;
 }
-.text
-{
-	font-family:Georgia, 'Times New Roman', Times, serif;
-	font-style:italic;
-	height:125px;
-	text-align: center;
-	padding: 0 2.5em;
-	line-height: 25pt;
-	font-size:25px;
-	color: #1D1E1D;
-	margin-bottom:20px;
-	animation:text 3s 1;
+
+.text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    height: 125px;
+    text-align: center;
+    padding: 0 2.5em;
+    line-height: 25pt;
+    font-size: 25px;
+    color: #1D1E1D;
+    margin-bottom: 20px;
+    animation: text 3s 1;
 }
-.text1
-{
-	font-family:Georgia, 'Times New Roman', Times, serif;
-	font-style:italic;
-	height:125px;
-	text-align: center;
-	padding: 0 2.5em;
-	line-height: 25pt;
-	font-size:25px;
-	color: #6ab04c;
-	margin-bottom:-40px;
+
+.text1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    height: 125px;
+    text-align: center;
+    padding: 0 2.5em;
+    line-height: 25pt;
+    font-size: 25px;
+    color: #6ab04c;
+    margin-bottom: -40px;
 }
-@keyframes text{
-	0%{
-		color: white;
-		margin-bottom:-40px;
-	}
-	30%{
-		letter-spacing:2px;
-		margin-bottom:-40px;
-	}
+
+@keyframes text {
+    0% {
+        color: white;
+        margin-bottom: -40px;
+    }
+    30% {
+        letter-spacing: 2px;
+        margin-bottom: -40px;
+    }
 }
+
+
 /*slider*/
 
-#slider img{
-	width:760px;
-	height:320px;
-	
+#slider img {
+    width: 760px;
+    height: 320px;
 }
-#slider{
-	width:760px;
-	height:320px;
-	margin:20px auto;
-	position:relative;
-	border:10px solid white;
-	box-shadow:0px 0px 5px 2px #ccc;
+
+#slider {
+    width: 760px;
+    height: 320px;
+    margin: 20px auto;
+    position: relative;
+    border: 10px solid white;
+    box-shadow: 0px 0px 5px 2px #ccc;
 }
-button{
-	padding:20px;
-	border:1px solid #999999;
-	background:white;
-	font-size:30px;
-	color:goldenrod;
-	position:absolute;
-	top:45%;
-		
+
+button {
+    padding: 20px;
+    border: 1px solid #999999;
+    background: white;
+    font-size: 30px;
+    color: goldenrod;
+    position: absolute;
+    top: 45%;
 }
-.next{
-	border-radius:50%;
-	margin-left:490px;
+
+.next {
+    border-radius: 50%;
+    margin-left: 490px;
 }
-.prew{
-	border-radius:50%;
-	margin-left:-550px;
+
+.prew {
+    border-radius: 50%;
+    margin-left: -550px;
 }
+
+
 /*posht fig madhe*/
 
-#container #thirdpart{
-    display:block; 
-    width:100%; 
-    margin-left:20px;
-    }
-
-#container #thirdpart #services{
-    padding:40px 0 30px 0; 
-   
+#container #thirdpart {
+    display: block;
+    width: 100%;
+    margin-left: 20px;
 }
 
-#container #thirdpart #services figure{
-    display:inline; 
-    float:left;
-    margin:0;
-}
-#container #thirdpart #services strong{
-    float:left; 
-    margin:8px 0 0 5px; 
-    padding:0; 
-    font-size:14px; 
-    font-weight:bold; 
-    text-transform:uppercase;
+#container #thirdpart #services {
+    padding: 40px 0 30px 0;
 }
 
-#container #thirdpart #services p{
-    display:block; 
-    margin:0; 
-    padding:5px 0 0 0; 
-    clear:both;
-    line-height:1.6em;
-}
-#container #thirdpart  a:link{
-	 color: grey;
-    padding: 1em;
-    padding-left:  0px;
-    text-decoration: none;
-    
-}
-#container #thirdpart a:visited{
-    color:gray;
-}
-#container #thirdpart a:hover{
-    color:goldenrod;   
+#container #thirdpart #services figure {
+    float: left;
+    margin: 0;
 }
 
-.figs3{
-    display:block; 
-    float:left; 
-    margin:0 30px 0 40px ;
-    width:300px;
+#container #thirdpart #services strong {
+    float: left;
+    margin: 8px 0 0 5px;
+    padding: 0;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-#container .readmore{
-    text-align:right;
-}
-  /*fotot me shkrim*/ 
-#Img .Indonecteus
-{
-	 line-height: 30pt;
-	 
-	 padding-top:175px;
-	 
-	
-}
-.Indonecteus ,
-.About{
-	margin-bottom:0;
- margin-left:45px;
-	
-}
-#Img figure
-{
-	display:inline-block;	
+#container #thirdpart #services p {
+    display: block;
+    margin: 0;
+    padding: 5px 0 0 0;
+    clear: both;
+    line-height: 1.6em;
 }
 
-#shkrimi .About
-{
-	 line-height: 30pt;
-
-	 padding:0;
-	
-
-}
-#shkrimi figure 
-{
-	display:inline-block;	
-}
-#shkrimi a:link{
+#container #thirdpart a:link {
     color: grey;
     padding: 1em;
-    padding-left:  0px;
+    padding-left: 0px;
     text-decoration: none;
 }
-#shkrimi a:visited{
-    color:gray;
+
+#container #thirdpart a:visited {
+    color: gray;
 }
-#shkrimi a:hover{
-    color:goldenrod;   
+
+#container #thirdpart a:hover {
+    color: goldenrod;
 }
-hr{
-	margin:10px 50px 50px 50px;
-    border-top: 1px solid #999999;	
+
+.figs3 {
+    display: block;
+    float: left;
+    margin: 0 30px 0 40px;
+    width: 300px;
 }
+
+#container .readmore {
+    text-align: right;
+}
+
+
+/*fotot me shkrim*/
+
+#Img .Indonecteus {
+    line-height: 30pt;
+    padding-top: 175px;
+}
+
+.Indonecteus,
+.About {
+    margin-bottom: 0;
+    margin-left: 45px;
+}
+
+#Img figure {
+    display: inline-block;
+}
+
+#shkrimi .About {
+    line-height: 30pt;
+    padding: 0;
+}
+
+#shkrimi figure {
+    display: inline-block;
+}
+
+#shkrimi a:link {
+    color: grey;
+    padding: 1em;
+    padding-left: 0px;
+    text-decoration: none;
+}
+
+#shkrimi a:visited {
+    color: gray;
+}
+
+#shkrimi a:hover {
+    color: goldenrod;
+}
+
+hr {
+    margin: 10px 50px 50px 50px;
+    border-top: 1px solid #999999;
+}
+
+
 /*pjesa fundit*/
-div.wrapper{
-    display:block; 
-    width:100%; 
+
+div.wrapper {
+    display: block;
+    width: 100%;
     height: 360px;
-    margin:30px 0px 0px 0px; 
-    padding:0; 
-    text-align:left;
-    background-color:#333333;
+    margin: 30px 0px 0px 0px;
+    padding: 0;
+    text-align: left;
+    background-color: #333333;
 }
 
-nav ul{
-    margin:0; 
-    padding:0; 
-    list-style:none;
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
-    
 
-.block{
-    
-    width:25%;
-    float:left;
+.block {
+    width: 25%;
+    float: left;
     text-align: left;
     color: black;
-   
 }
 
-.block a:link{
-	color:peru;
+.block a:link {
+    color: peru;
 }
 
-.block ul{
+.block ul {
     margin: 0;
-    padding:0;
-    list-style: none; 
-    color:darkgrey;
+    padding: 0;
+    list-style: none;
+    color: darkgrey;
 }
-.block h2{
-    
-    color:whitesmoke;
+
+.block h2 {
+    color: whitesmoke;
 }
 
 
 /*Footer*/
-#footer{
+
+#footer {
     width: 100%;
     height: 300px;
     margin: 0px 0px 0px 20px;
 }
 
-#block2 ul li{
+#block2 ul li {
     border-bottom: 1px solid dimgrey;
     margin: 5px;
     padding: 7px 7px 15px 7px;
-  
 }
-#block2 ul a{
+
+#block2 ul a {
     margin: 5px;
     padding: 0px 0px 10px 5px;
     text-decoration: none;
-  
-}
-#block2 ul a:visited{
-    color:peru;
 }
 
-#block3 ul a{
+#block2 ul a:visited {
+    color: peru;
+}
+
+#block3 ul a {
     text-align: right;
     padding: 10px 0px 10px 160px;
     margin: 5px;
     text-decoration: none;
-   
 }
-#block3 ul a:visited{
- color:peru;
+
+#block3 ul a:visited {
+    color: peru;
 }
-#block3 ul li{
+
+#block3 ul li {
     margin: 5px 5px 5px 15px;
 }
-#block3 h2{
+
+#block3 h2 {
     margin-left: 10px;
 }
-#submit{
+
+#submit {
     color: white;
     background-color: peru;
-    border-radius: 6px;	
-	width:30%;
-	text-transform:uppercase;
-	font-family:"Garamond";
-   
+    border-radius: 6px;
+    width: 30%;
+    text-transform: uppercase;
+    font-family: "Garamond";
 }
-input, text{
-	width:80%;
+
+input,
+text {
+    width: 80%;
     padding: 5px;
     border-radius: 5px;
-    background-color : #404241; 
-    border:none;
-
+    background-color: #404241;
+    border: none;
 }
-input, textarea{   
-	width:80%;
+
+input,
+textarea {
+    width: 80%;
     padding: 5px;
     border-radius: 5px;
-    background-color : #404241; 
-    border:none;
+    background-color: #404241;
+    border: none;
 }
-#StaySocial a:link{
+
+#StaySocial a:link {
     color: grey;
     padding: 1em;
-    padding-left:  0px;
-    text-decoration: none;
-}
-#StaySocial a:visited{
-    color:gray;
-}
-#StaySocial a:hover{
-    color:goldenrod;   
-}
-#FromBlock a:link{
-    color: grey;
-    padding: 1em;
-    padding-left:  0px;
+    padding-left: 0px;
     text-decoration: none;
 }
 
-#FromBlock a:visited{
-    color:gray;
-}
-#FromBlock a:hover{
-    color:goldenrod;   
+#StaySocial a:visited {
+    color: gray;
 }
 
-#ContactDetails a:link{
+#StaySocial a:hover {
+    color: goldenrod;
+}
+
+#FromBlock a:link {
     color: grey;
     padding: 1em;
-    padding-left:  0px;
+    padding-left: 0px;
     text-decoration: none;
 }
-#ContactDetails a:visited{
-    color:gray;
+
+#FromBlock a:visited {
+    color: gray;
 }
-#ContactDetails a:hover{
-    color:goldenrod;   
+
+#FromBlock a:hover {
+    color: goldenrod;
+}
+
+#ContactDetails a:link {
+    color: grey;
+    padding: 1em;
+    padding-left: 0px;
+    text-decoration: none;
+}
+
+#ContactDetails a:visited {
+    color: gray;
+}
+
+#ContactDetails a:hover {
+    color: goldenrod;
 }

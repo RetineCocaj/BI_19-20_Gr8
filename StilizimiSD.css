@@ -56,7 +56,6 @@ header span {
 }
 
 .list ul li {
-    dispaly: inline-block;
     position: relative;
     padding: 15px 20px;
     float: left;
@@ -82,13 +81,13 @@ header span {
     position: absolute;
     top: 50px;
     left: 0px;
-    dispaly: none;
+    display: none;
     visibility: hidden;
 }
 
 .list ul li ul li {
     background: #ddd;
-    dispaly: block;
+    display: block;
     height: 20px;
     width: 150px;
     overflow: visible;
@@ -100,7 +99,7 @@ header span {
 }
 
 .list ul li:hover ul {
-    dispaly: block;
+    display: block;
     opacity: 1;
     visibility: visible;
 }

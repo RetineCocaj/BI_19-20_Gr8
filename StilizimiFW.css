@@ -1,487 +1,529 @@
-body{
-
-font-family: "Garamond" sans-serif ;
-background-color:#D7D7D7;
+body {
+    font-family: "Garamond" sans-serif;
+    background-color: #D7D7D7;
 }
 
-.Margin{
-	margin-left:90px;
-    margin-right:90px;
-    background-color:white;
+.Margin {
+    margin-left: 90px;
+    margin-right: 90px;
+    background-color: white;
 }
-#loc_t{
+
+#loc_t {
     width: 250px;
     word-wrap: break-word;
     color: midnightblue;
 }
-#location{
+
+#location {
     margin-right: 5px;
     float: left;
 }
-.top{
-    background-color:#616161;
-    font-family:"Garamond";
+
+.top {
+    background-color: #616161;
+    font-family: "Garamond";
     text-align: left;
     font-size: 100%;
     font-weight: italic;
     color: dimgrey;
     padding: 0 1em 0 1em;
-        
 }
+
 header {
-	border-bottom: 0 solid #000; 
-	padding-bottom: 45px;
-	
-	
+    border-bottom: 0 solid #000;
+    padding-bottom: 45px;
 }
-header > h1 {
-	display: inline-block;
-    color: #383939; 
+
+header>h1 {
+    display: inline-block;
+    color: #383939;
 }
+
 header span {
-	margin-left:0;
-   	font-size:0.9em;
-	padding-left:10px;  
+    margin-left: 0;
+    font-size: 0.9em;
+    padding-left: 10px;
 }
+
 #mydiv {
-  font-variant-caps:titling-caps;
-  font-size: 2em; 
-  padding-left:10px;  
-  }
+    font-variant-caps: titling-caps;
+    font-size: 2em;
+    padding-left: 10px;
+}
 
-
-.bodypart{
-    
+.bodypart {
     text-align: center;
     color: gray;
     padding: 1em 4em;
-     border-bottom:1px solid gray;
-     font-style: italic;
+    border-bottom: 1px solid gray;
+    font-style: italic;
 }
-  
-.nav{ 
+
+.nav {
     display: inline-block;
-	border-top: 1px solid #9A9A9A;
-	width:100%;
+    border-top: 1px solid #9A9A9A;
+    width: 100%;
     border-bottom: 1px solid #9A9A9A;
-    
-	
 }
-.nav ul{
+
+.nav ul {
     display: inline;
     list-style: none;
-	text-align:left;
-	margin:0;
-	padding:0;
+    text-align: left;
+    margin: 0;
+    padding: 0;
 }
 
-.nav ul li{
-	dispaly:inline-block;
-	position:relative;
-	padding:15px 20px;	
-	float: left;
-	
+.nav ul li {
+    position: relative;
+    padding: 15px 20px;
+    float: left;
 }
-.nav ul li a{
-	color:grey;
+
+.nav ul li a {
+    color: grey;
     padding: 25px 20px;
-    padding-left:  0px;
+    padding-left: 0px;
     text-decoration: none;
     text-transform: uppercase;
-	
-	
-	
-}
-.nav a:hover{
-	color:goldenrod;
 }
 
-.nav ul li:hover{
-
-	color:goldenrod;
-}
-.nav ul li ul{
-	position:absolute;
-	top:50px;
-	left:0px;
-	dispaly:none;
-	visibility:hidden;
-	
-
-}
-.nav ul li ul li{
-	background:#ddd;
-	dispaly:block;
-	height:20px;
-	width:150px;
-	overflow: visible;
-	padding-left: 0px !important;
+.nav a:hover {
+    color: goldenrod;
 }
 
-.nav ul li ul li:hover{
-		background:#e3e3e3;
+.nav ul li:hover {
+    color: goldenrod;
 }
-.nav ul li:hover ul{
-	dispaly:block;
-	opacity:1;
-	visibility:visible;
-	
-}
- 
-/*permbajtja*/ 
 
-.firstline{
+.nav ul li ul {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    display: none;
+    visibility: hidden;
+}
+
+.nav ul li ul li {
+    background: #ddd;
+    display: block;
+    height: 20px;
+    width: 150px;
+    overflow: visible;
+    padding-left: 0px !important;
+}
+
+.nav ul li ul li:hover {
+    background: #e3e3e3;
+}
+
+.nav ul li:hover ul {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/*permbajtja*/
+
+.firstline {
     line-height: 32px;
-    margin: 10px ;
-    padding:50px ; 	
+    margin: 10px;
+    padding: 50px;
 }
-.firstline h6{
-	margin-left:50px;
-    font-family: "Varela Round" sans-serif ;
+
+.firstline h6 {
+    margin-left: 50px;
+    font-family: "Varela Round" sans-serif;
     font-size: 21px;
     line-height: 2px;
     font-weight: 400;
 }
 
-em{
-	margin-top:0;
-	margin-left:50px;
+em {
+    margin-top: 0;
+    margin-left: 50px;
 }
-.table_1{
-	font-family: Varela Round;
+
+.table_1 {
+    font-family: Varela Round;
     border: 4px solid blue;
     border-radius: 0px;
     width: 700px;
     float: left;
     margin: 50px 50px 50px 50px;
-	margin-left:50px;
-	
-}
-label{
-	margin-left:50px;
-}
-.label #State{
-	width:20px;
-}
-input[name="title"]{
-	margin-left:50px;
-	border: 1px solid #ccc;
-	border-radius: 2px;
-    font-size: 16px;
-    height: 24px;
-    padding: 4px;
-	box-shadow: none;
-    background-color: transparent;
-}
-input[name="usr_name"]{
-	margin-left:50px;
-	border: 1px solid #ccc;
-	border-radius: 2px;
-    font-size: 16px;
-    height: 24px;
-    padding: 4px;
-	box-shadow: none;
-    background-color: transparent;
-}
-.formControl{
-    
-    height: 34px;
-    padding: 6px 25px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 2px;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-}
-#title{ width: 85% }
-#title1 { width: 38%}
-#title2 { width: 22%}
-#titlee{ width: 85% }
-
-
-input:focus:required:invalid {
-   border: 2px solid red !important;
-}
-.Pare{
-	margin-left:50px;
-}
-hr{
-    margin-top: 20px;
-    margin-bottom: 20px;
-	margin:50px 50px 50px 50px;
-    border-top: 1px solid #eee;	
+    margin-left: 50px;
 }
 
-.firstline h2{
-	style:bold;
-	margin-left:50px;
-	font-size: 41px;
-    line-height: 32px;
-    font-weight: 400;
-}
- 
-.firstline h3{
-	style:bold;
-	margin-left:50px;
-	font-size: 41px;
-    line-height: 32px;
-    font-weight: 400;
-	padding:10px;
-}
-.checkbox{
-	line-height:32px;
-}
-.box {
-	margin-left:50px;
-    line-height:32px;	
-}
-input[type="tel"]{
-	margin-left: 50px;
-    border: 1px solid #ccc;
-    border-radius: 2px;
-    font-size: 16px;
-    height: 24px;
-	width:22%;
-    padding: 4px;
-    box-shadow: none;
-    background-color: transparent;
+label {
+    margin-left: 50px;
 }
 
-h4{
-    
-	margin-left:50px;
-	font-size: 20px;
-    line-height: 32px;
-    font-weight: 400;
-	padding:10px;	
+.label #State {
+    width: 20px;
 }
-.fieldwrp label {
-    display: block;
-    padding-left: 15px;
-    text-indent: -15px;
-}
-.fieldwrp input {
-    width: 13px;
-    height: 13px;
-    padding: 0;
-    margin:0;
-    vertical-align: bottom;
-    position: relative;
-    top: -1px;
-    overflow: hidden;
 
-}
-.firstline #submit{
-    color: white;
-    background-color: #FFA12B;
-	font-size:20px;
-    border-radius: 6px;
-	width:100px;
-	height:50px;
-    margin:50px;
-}
-#pw span{
-	margin-left: 50px;
-}
-input[id="num1"]{
-	margin-left:50px;
-    border: 1px solid #ccc;
-    border-radius: 2px;
-    font-size: 16px;
-    height: 24px;
-	width:22%;
-    padding: 4px;
-    box-shadow: none;
-    background-color: transparent;
-}
-input[id="num2"]{
-	margin-left: 50px;
-    border: 1px solid #ccc;
-    border-radius: 2px;
-    font-size: 16px;
-    height: 24px;
-	width:22%;
-    padding: 4px;
-    box-shadow: none;
-    background-color: transparent;
-}
-input[id="num3"]{
+input[name="title"] {
     margin-left: 50px;
     border: 1px solid #ccc;
     border-radius: 2px;
     font-size: 16px;
     height: 24px;
-    width:22%;
     padding: 4px;
     box-shadow: none;
     background-color: transparent;
 }
-#Anash p{
-	 line-height: 22px;
-	 font-size:15px;
-	
+
+input[name="usr_name"] {
+    margin-left: 50px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 16px;
+    height: 24px;
+    padding: 4px;
+    box-shadow: none;
+    background-color: transparent;
 }
-#Anash h2{
-	word-wrap: break-word;
+
+.formControl {
+    height: 34px;
+    padding: 6px 25px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
-.firstline #date{
-	float:right;
-	margin-right:10px;
-	font-size:20px;
-	font-weight:bold;
+
+#title {
+    width: 85%
 }
-.linear_gradient{
+
+#title1 {
+    width: 38%
+}
+
+#title2 {
+    width: 22%
+}
+
+#titlee {
+    width: 85%
+}
+
+input:focus:required:invalid {
+    border: 2px solid red !important;
+}
+
+.Pare {
+    margin-left: 50px;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: 50px 50px 50px 50px;
+    border-top: 1px solid #eee;
+}
+
+.firstline h2 {
+    font-weight: bold;
+    margin-left: 50px;
+    font-size: 41px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+.firstline h3 {
+    font-weight: bold;
+    margin-left: 50px;
+    font-size: 41px;
+    line-height: 32px;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.checkbox {
+    line-height: 32px;
+}
+
+.box {
+    margin-left: 50px;
+    line-height: 32px;
+}
+
+input[type="tel"] {
+    margin-left: 50px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 16px;
+    height: 24px;
+    width: 22%;
+    padding: 4px;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+h4 {
+    margin-left: 50px;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.fieldwrp label {
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+}
+
+.fieldwrp input {
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    margin: 0;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+    overflow: hidden;
+}
+
+.firstline #submit {
+    color: white;
+    background-color: #FFA12B;
+    font-size: 20px;
+    border-radius: 6px;
+    width: 100px;
+    height: 50px;
+    margin: 50px;
+}
+
+#pw span {
+    margin-left: 50px;
+}
+
+input[id="num1"] {
+    margin-left: 50px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 16px;
+    height: 24px;
+    width: 22%;
+    padding: 4px;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+input[id="num2"] {
+    margin-left: 50px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 16px;
+    height: 24px;
+    width: 22%;
+    padding: 4px;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+input[id="num3"] {
+    margin-left: 50px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 16px;
+    height: 24px;
+    width: 22%;
+    padding: 4px;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+#Anash p {
+    line-height: 22px;
+    font-size: 15px;
+}
+
+#Anash h2 {
+    word-wrap: break-word;
+}
+
+.firstline #date {
+    float: right;
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.linear_gradient {
     width: 1200;
     height: 70px;
     background-image: linear-gradient(-90deg, #003a87, #4f9ee8, #edb739, #f09516, #a8fbff);
-
 }
-.radial_gradient{
+
+.radial_gradient {
     margin-left: 830px;
     width: 300px;
     height: 30px;
-  background-image: repeating-radial-gradient(#003a87, #f09516 10%, #edb739 15%,#a8fbff,#4f9ee8);
+    background-image: repeating-radial-gradient(#003a87, #f09516 10%, #edb739 15%, #a8fbff, #4f9ee8);
 }
+
+
 /*pjesa fundit*/
 
-div.wrapper{
-    display:block; 
-    width:100%; 
+div.wrapper {
+    display: block;
+    width: 100%;
     height: 360px;
-    margin:1400px 0px 0px 0px; 
-    padding:0; 
-    text-align:left;
-    background-color:#333333;
+    margin: 1400px 0px 0px 0px;
+    padding: 0;
+    text-align: left;
+    background-color: #333333;
 }
 
-nav ul{
-    margin:0; 
-    padding:0; 
-    list-style:none;
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
-    
 
-.block{
-    
-    width:25%;
-    float:left;
+.block {
+    width: 25%;
+    float: left;
     text-align: left;
     color: black;
-   
 }
-.block a:link{
-color:peru;
+
+.block a:link {
+    color: peru;
 }
-.block ul{
+
+.block ul {
     margin: 0;
-    padding:0;
-    list-style: none; 
-    color:darkgrey;
+    padding: 0;
+    list-style: none;
+    color: darkgrey;
 }
-.block h2{
-    
-    color:whitesmoke;
+
+.block h2 {
+    color: whitesmoke;
 }
+
+
 /*Footer*/
-#footer{
+
+#footer {
     width: 100%;
     height: 300px;
     margin: 0px 0px 0px 20px;
 }
 
-#block2 ul li{
+#block2 ul li {
     border-bottom: 1px solid dimgrey;
     margin: 5px;
     padding: 7px 7px 15px 7px;
-  
 }
-#block2 ul a{
+
+#block2 ul a {
     margin: 5px;
     padding: 0px 0px 10px 5px;
     text-decoration: none;
-  
-}
-#block2 ul a:visited{
-    color:peru;
 }
 
-#block3 ul a{
+#block2 ul a:visited {
+    color: peru;
+}
+
+#block3 ul a {
     text-align: right;
     padding: 10px 0px 10px 160px;
     margin: 5px;
     text-decoration: none;
-   
 }
-#block3 ul a:visited{
- color:peru;
+
+#block3 ul a:visited {
+    color: peru;
 }
-#block3 ul li{
+
+#block3 ul li {
     margin: 5px 5px 5px 15px;
 }
-#block3 h2{
+
+#block3 h2 {
     margin-left: 10px;
 }
-#submit{
+
+#submit {
     color: white;
     background-color: peru;
     border-radius: 6px;
-   width:30%;
-   text-transform:uppercase;
-	font-family:"Garamond";
+    width: 30%;
+    text-transform: uppercase;
+    font-family: "Garamond";
 }
-#footer input[name="text1"]{
-	width:80%;
+
+#footer input[name="text1"] {
+    width: 80%;
     padding: 5px;
     border-radius: 5px;
-    background-color : #404241; 
-    border:none;
-
+    background-color: #404241;
+    border: none;
 }
-input, textarea{
-    width:80%;
+
+input,
+textarea {
+    width: 80%;
     padding: 5px;
     border-radius: 5px;
-    background-color : #404241; 
-    border:none;
+    background-color: #404241;
+    border: none;
 }
-#StaySocial a:link{
+
+#StaySocial a:link {
     color: grey;
     padding: 1em;
-    padding-left:  0px;
-    text-decoration: none;
-}
-#StaySocial a:visited{
-    color:gray;
-}
-#StaySocial a:hover{
-    color:goldenrod;   
-}
-#FromBlock a:link{
-    color: grey;
-    padding: 1em;
-    padding-left:  0px;
+    padding-left: 0px;
     text-decoration: none;
 }
 
-#FromBlock a:visited{
-    color:gray;
-}
-#FromBlock a:hover{
-    color:goldenrod;   
+#StaySocial a:visited {
+    color: gray;
 }
 
-#ContactDetails a:link{
+#StaySocial a:hover {
+    color: goldenrod;
+}
+
+#FromBlock a:link {
     color: grey;
     padding: 1em;
-    padding-left:  0px;
+    padding-left: 0px;
     text-decoration: none;
 }
-#ContactDetails a:visited{
-    color:gray;
+
+#FromBlock a:visited {
+    color: gray;
 }
-#ContactDetails a:hover{
-    color:goldenrod;   
+
+#FromBlock a:hover {
+    color: goldenrod;
+}
+
+#ContactDetails a:link {
+    color: grey;
+    padding: 1em;
+    padding-left: 0px;
+    text-decoration: none;
+}
+
+#ContactDetails a:visited {
+    color: gray;
+}
+
+#ContactDetails a:hover {
+    color: goldenrod;
 }
