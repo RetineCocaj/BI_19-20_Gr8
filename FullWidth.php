@@ -400,13 +400,11 @@ $sqlQuery = "INSERT INTO Bookings (contactName,managementComp,businessName,propA
 if ($conn->query($sqlQuery) === TRUE) {
     echo '<script type="text/javascript">'; 
     echo 'alert("Data successfully saved");'; 
-    echo 'window.location.href= "http://localhost:8888/BI_19-20_Gr8/FullWidth.html";';
     echo '</script>';  
   } else {
     $error = 'Error: ' . $sql . $conn->error;
     echo '<script type="text/javascript">'; 
     echo 'alert("'.$error.'");'; 
-    echo 'window.location.href= "http://localhost:8888/BI_19-20_Gr8/FullWidth.html";';
     echo '</script>'; 
   }
 
