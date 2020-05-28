@@ -114,13 +114,22 @@
                 echo '</script>'; 
             } else{
                 $query = "INSERT INTO Users (username, email, password) VALUES('$username','$email','$hashPass')";
+                $usernameLow = strtolower($username);
+                
+                $id = "SELECT id FROM Users WHERE username = '$user';";
+                $resId = mysqli_query($conn, $id);
+                if ($row = mysqli_fetch_assoc($resId)) { $id = $row["id"]; }
+
+                $update = " UPDATE Users 
+                            SET username = LOWER(userName)";
+                $retval = mysqli_query( $conn, $update);
 
                 if ($conn->query($query) === TRUE) {
                     
                    $_SESSION['email'] = $_POST['email'];
-                    
                     header("Location: session.php");
-                  } else {
+
+                } else {
                     $error = 'Error: ' . $query . $conn->error;
                     echo '<script type="text/javascript">'; 
                     echo 'alert("'.$error.'");'; 
