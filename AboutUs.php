@@ -535,7 +535,7 @@ class B {
 
 $b = new B("Destruct");
 ?>
-   
+   			<li><strong>Blog Post Title</strong></li>
                             <li>Posted by Admin on 03.01.2020</li>
                             <li>
                                 <p>Cleanliness must be observed in a learning envionment. Clean environment</p>

@@ -41,6 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $error .="Property Address is required<br/>";
   } else {   
         $propAddr=  preg_split("/ /", $_POST["propAddr"]);
+       // print_r($propAddr);
         
                 
             }
@@ -96,7 +97,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $error .="Washing company is required<br/>";
   } else {    
         $washing_company = preg_replace('/e/', 'ë',    $_POST["washing_company"]); 
-              
+           //   echo $washing_company;
             }
     
     
