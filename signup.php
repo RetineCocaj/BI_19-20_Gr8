@@ -15,7 +15,7 @@
             id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
             username VARCHAR(20) NOT NULL,
             email VARCHAR(20) NOT NULL,
-            password VARCHAR(25) NOT NULL)";
+            password VARCHAR(10000) NOT NULL)";
 
         if ($conn->query($sqlQuery) === TRUE) {
             echo '<p>Table created successfully!</p>';
@@ -59,39 +59,18 @@
                 $query = "INSERT INTO Users (username, email, password) VALUES('$username','$email','$hashPass')";
 
                 if ($conn->query($query) === TRUE) {
-                    echo '<script type="text/javascript">'; 
-                    echo 'alert("User has been registered");'; 
-                    echo '</script>';  
+                    
+                   $_SESSION['email'] = $_POST['email'];
+                    
+                    header("Location: session.php");
                   } else {
-                    $error = 'Error: ' . $sql . $conn->error;
+                    $error = 'Error: ' . $query . $conn->error;
                     echo '<script type="text/javascript">'; 
                     echo 'alert("'.$error.'");'; 
                     echo '</script>'; 
                 }
             }
             
-            /*
-            if (mysqli_num_rows($res) > 0) {
-                echo "<p>User has been registered.</p>";
-                
-            } else {
-                
-                $query = "INSERT INTO Users (username, email, password) 
-                VALUES ('".mysqli_real_escape_string($link, $_POST['email'])."', '".mysqli_real_escape_string($link, $_POST['password'])."')";
-                
-                if (mysqli_query($link, $query)) {
-                    
-                    $_SESSION['email'] = $_POST['email'];
-                    
-                    header("Location: session.php");
-                    
-                } else {
-                    
-                    echo "<p>There was a problem signing you up - please try again later.</p>";
-                    
-                }
-                
-            }*/
             
         }
         
