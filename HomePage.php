@@ -337,8 +337,8 @@
 						ContactDetails("<strong>Office Hours</strong>");
 						ContactDetails("Monday- Friday :08:00-17:30");
 						ContactDetails("Saturday: 08-13:00");
-						echo str_word_count("Saturday: 08-13:00  ");
-						echo strrev("Address  ");
+						//echo str_word_count("Saturday: 08-13:00  ");
+						//echo strrev("Address  ");
 
 						?>
 					</ul>
