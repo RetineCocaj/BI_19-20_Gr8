@@ -1,5 +1,5 @@
 <?php
-
+    session_start();
     if (array_key_exists('email', $_POST) OR array_key_exists('password', $_POST)) {
         $dbhost = 'localhost';
         $dbuser = 'root';
@@ -39,8 +39,9 @@
                 
                 if (mysqli_query($link, $query)) {
                     
-                    echo "<p>You have been signed up!";
+                    $_SESSION['email'] = $_POST['email'];
                     
+                    header("Location: session.php");
                 } else {
                     
                     echo "<p>There was a problem signing you up - please try again later.</p>";
