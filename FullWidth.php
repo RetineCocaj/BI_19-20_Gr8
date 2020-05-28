@@ -1,3 +1,153 @@
+<?php
+   
+    
+    
+ //Validation
+// define variables and set to empty values
+$error=""; $successMessage = "";
+$contactNameErr = $emailErr = $managementCompErr = $businessNameErr =$propAddrErr=$cityErr= $StateErr=$zip_codeErr=$phoneErr=$faxErr=$washing_companyErr="";
+$contactName = $email = $managementComp = $businessName =$propAddr=$city= $State=$zip_code=$phone=$fax=$washing_company="";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["contactName"])) {
+    $error .= "Name is required<br/>";
+  } else {
+   $contactName =($_POST["contactName"]);
+    // check if name only contains letters and whitespace
+    if (!preg_match("/^[a-zA-Z ]*$/",$contactName)) {
+      $nameErr = "Only letters and white space allowed";
+    }
+  }
+    if (empty($_POST["managementComp"])) {
+    $error .="Management Company is required<br/>";
+  } else {
+               $managementComp = $_POST["managementComp"];
+            }
+       
+    if (empty($_POST["businessName"])) {
+    $error .="Business Name is required<br/>";
+  } else {
+               $businessName = $_POST["businessName"];
+            }
+
+           
+    if (empty($_POST["businessName"])) {
+    $error .="Business Name is required<br/>";
+  } else {
+               $businessName = $_POST["businessName"];
+            }
+               
+    if (empty($_POST["propAddr"])) {
+    $error .="Property Address is required<br/>";
+  } else {   
+        $propAddr=  preg_split("/ /", $_POST["propAddr"]);
+        
+                
+            }
+                  
+    
+    if (empty($_POST["city"])) {
+    $error .="City is required<br/>";
+  } else {
+               $city = $_POST["city"];
+        if (!preg_match("/^[a-zA-Z ]*$/",$city)) {
+      $cityErr = "Only letters and white space allowed";
+    }
+            }
+    
+    if (empty($_POST["State"])) {
+    $error .="State is required<br/>";
+  } else {
+               $State = $_POST["State"];
+        if (!preg_match("/^[a-zA-Z ]*$/",$State)) {
+      $StateErr = "Only letters and white space allowed";
+    }
+            }
+    
+       if (empty($_POST["zip_code"])) {
+    $error .="Zip code is required<br/>";
+  } else { if (is_numeric($zip_code)) {
+               $zip_code = $_POST["zip_code"];}
+          else{
+              $zip_codeErr="It should include only numbers";
+          }
+            }
+    
+    
+        if (empty($_POST["phone"])) {
+    $error .="Phone is required<br/>";
+  } else {
+              if (is_numeric($phone)) {
+                  
+               $phone = $_POST["phone"];}
+          else{
+              $phoneErr="It should include only numbers";
+          }
+            }
+    
+    
+        if (empty($_POST["fax"])) {
+    $error .="Fax is required<br/>";
+  } else {
+               $fax = $_POST["fax"];
+            }
+    
+        if (empty($_POST["washing_company"])) {
+    $error .="Washing company is required<br/>";
+  } else {    
+        $washing_company = preg_replace('/e/', 'ë',    $_POST["washing_company"]); 
+              
+            }
+    
+    
+  if (empty($_POST["email"])) {
+      $emailErr ="Email is required";
+  } else {
+    $email = ($_POST["email"]);
+    // check if e-mail address is well-formed
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+       $error .= "Email is not valid";
+    }
+  }
+    
+            if ($error != "") {
+            
+            $error = '<div class="alert alert-danger" role="alert"><p>There were error(s) in your form:</p>' . $error . '</div>';
+            
+        } else {
+            
+            $emailTo = "contact@mydomail.com";
+            
+            $contactName = $_POST['contactName'];
+            
+            $businessName = $_POST['businessName'];
+            
+            $headers = "From: ".$_POST['email'];
+            
+            if (mail($emailTo, $contactName, $businessName ,$headers)) {
+                
+                $successMessage = '<div class="alert alert-success" role="alert">Your message was sent, we\'ll get back to you ASAP!</div>';
+                
+                
+            } else {
+                
+                $error = '<div class="alert alert-danger" role="alert"><p><strong>Your message couldn\'t be sent - please try again later</div>';
+                
+                
+            }
+            
+        }
+        
+}
+ 
+
+
+?>
+
+
+
+
+
 <html lang="en" manifest="manifest.appcache">
 
 <head>
@@ -7,6 +157,8 @@
     <title>Projekti ne WWW </title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="StilizimiFW.css" />
+    
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
     <script type="text/javascript">
         //pjesa e footer-->
         function toggleText6(btn, id) {
@@ -145,8 +297,9 @@
             </p>
 
             <table class="table_1">
+    <div id="error"><?php print( $error.$successMessage); ?></div>
              
-                <form action="validation.php" autocomplete="on"  method="post">
+                <form action="" autocomplete="on"  method="post">
 
                     <tr>
                         <td>
@@ -473,6 +626,10 @@ if ($conn->query($sqlQuery) === TRUE) {
 
 $conn->close();
 }
+    
+    
+    
+    
 ?>
 
 
