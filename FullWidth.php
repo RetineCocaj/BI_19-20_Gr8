@@ -47,43 +47,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
                   
     
-    if (empty($_POST["city"])) {
-    $error .="City is required<br/>";
+    if (!preg_match("/^[a-zA-Z]+$/",$_POST["city"])) {
+     $error .="City is not valid<br/>";
   } else {
                $city = $_POST["city"];
-        if (!preg_match("/^[a-zA-Z ]*$/",$city)) {
-      $cityErr = "Only letters and white space allowed";
-    }
-            }
+}
     
-    if (empty($_POST["State"])) {
+    if (!preg_match("/^[a-zA-Z ]*$/",$_POST["State"])) {
     $error .="State is required<br/>";
   } else {
                $State = $_POST["State"];
-        if (!preg_match("/^[a-zA-Z ]*$/",$State)) {
-      $StateErr = "Only letters and white space allowed";
-    }
             }
     
-       if (empty($_POST["zip_code"])) {
+       if (empty($_POST["zip_code"])&&(is_numeric($_POST["zip_code"])) ){
     $error .="Zip code is required<br/>";
-  } else { if (is_numeric($zip_code)) {
-               $zip_code = $_POST["zip_code"];}
-          else{
-              $zip_codeErr="It should include only numbers";
-          }
+  } else { 
+               $zip_code = $_POST["zip_code"];
             }
     
     
-        if (empty($_POST["phone"])) {
+        if (empty($_POST["phone"])&&(is_numeric($_POST["phone"]))) {
     $error .="Phone is required<br/>";
-  } else {
-              if (is_numeric($phone)) {
-                  
-               $phone = $_POST["phone"];}
-          else{
-              $phoneErr="It should include only numbers";
-          }
+  } else {                  
+               $phone = $_POST["phone"];
             }
     
     
@@ -101,14 +87,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
     
     
-  if (empty($_POST["email"])) {
-      $emailErr ="Email is required";
+  if (empty($_POST["email"])&&!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
+      $error .= "Email is not valid";;
   } else {
     $email = ($_POST["email"]);
-    // check if e-mail address is well-formed
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-       $error .= "Email is not valid";
-    }
+  
   }
     
             if ($error != "") {
@@ -117,7 +100,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             
         } else {
             
-            $emailTo = "contact@mydomail.com";
+  $emailTo = "contact@mydomail.com";
             
             $contactName = $_POST['contactName'];
             
