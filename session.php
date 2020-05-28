@@ -4,7 +4,7 @@
     
     if ($_SESSION['email']) {
         
-        echo '<script> alert("You are logged in!");</script>';
+        echo '<script> alert("Your data are saved. You can log in now!");</script>';
         echo "<script>window.location.href = 'signup.php';</script>";
    } else {
         

@@ -1,7 +1,6 @@
 <?php
     session_start();
-    $cookie_name="loggedin";
-      $dbhost = 'localhost';
+        $dbhost = 'localhost';
         $dbuser = 'root';
         $dbpass = '';
         $dbname = 'CorporateClean'; 
@@ -29,37 +28,39 @@
         }   
 
        if (isset($_POST['login'])){
-         $user =$_POST['usernameL'];
-         $pass= $_POST["passwordL"];
-         $hashPass = hash('sha512',$pass);
+            $user = $_POST['usernameL'];
+            $pass = $_POST["passwordL"];
+            $hashPass = hash('sha512',$pass);
 
-       $sql = "SELECT * 
-                FROM Users 
-                WHERE (username='$user' AND password='$hashPass');";
-                $res = mysqli_query($conn,$sql);
-        
-         if(mysqli_num_rows($res)>0){
+            $sql = "SELECT * 
+                    FROM Users 
+                    WHERE (username='$user' AND password='$hashPass');";
+            $res = mysqli_query($conn,$sql);
+            
+            if(mysqli_num_rows($res)>0){
+                /** Cookie creation */
+                $cookie_value =  $user;
+                $cookie_name = "loggedin";
+                setcookie($cookie_name, $cookie_value, time()+(1800),"/");
 
-             $cookie_value= $user;
-             setcookie($cookie_name,$cookie_value,time()+(180),"/");
-             header("Location:login.php");
-         }
-         else{
+                if(isset($_COOKIE[$cookie_name])){
+                    $cookie_value = $_COOKIE[$cookie_name];
+                    echo '<form method="post"><p>You are logged in as '.$cookie_value.'. Do you want to log out? &emsp;&emsp;&emsp;';
+                    echo '<input name="logout" type="submit" id="submit" value = "Logout" style="width:100px;"></p></form>';
 
-             echo "Username or password is incorrect";
-         }
-
-
-
-     }
-
+                    /** Cookie destruction */
+                    if(isset($_POST["logout"])){ 
+                        setcookie("loggedin","val",time()-(120),"/");
+                    }
+                }
+            }
+            else{
+                echo "<p>Username or password is incorrect</p>";
+            }
+        }
 
 
     if (array_key_exists('username', $_POST) OR array_key_exists('email', $_POST) OR array_key_exists('password', $_POST)) {
-      
-
-      
-        
         if ($_POST['email'] == '') {
             echo '<script type="text/javascript">'; 
             echo 'alert("Email address is required.");'; 
@@ -113,12 +114,8 @@
                     echo 'alert("'.$error.'");'; 
                     echo '</script>'; 
                 }
-            }
-            
-            
-        }
-        
-        
+            } 
+        }  
     }
 
 ?>
@@ -237,6 +234,7 @@
                 </form>
             </div>
         </div>
+        <span id="loged"></span>
 
         <div class="wrapper row3">
             <div id="footer" class="clear">
