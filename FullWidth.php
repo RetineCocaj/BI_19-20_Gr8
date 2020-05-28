@@ -145,7 +145,30 @@
             </p>
 
             <table class="table_1">
-                <form action="validation.php" autocomplete="on"  method="post">
+                <?php
+// define variables and set to empty values
+$nameErr = $emailErr = $websiteErr = "";
+$name = $email  = $comment = $website = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["email"])) {
+    $emailErr = "Email is required";
+  } else {
+    $email = test_input($_POST["email"]);
+    // check if e-mail address is well-formed
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      $emailErr = "Invalid email format";
+    }
+  }
+}
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+?>
+                <form action="validation.php" autocomplete="on"  method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 
                     <tr>
                         <td>
@@ -214,7 +237,8 @@
                                 <label id="Phone">PhoneNumber <span class="field_required" style="color:#ee0000;">*</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Fax &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Email <span class="field_required" style="color:#ee0000;">*</span><br>
 					<input  placeholder="123-45-678" type="tel" name="phone"  required>
 					 <input  placeholder="123-45-678" type="tel" name="fax" >
-					  <input type="email" name="email" id="title2" class="required hilightable" autocomplete="off" required></label>
+					 <input type="text" id="title2" name="title" name="email">
+  <span class="error">* <?php echo $emailErr;?></span>
                             </div>
                             <hr>
                         </td>

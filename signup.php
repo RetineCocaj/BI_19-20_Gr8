@@ -1,7 +1,7 @@
 <?php
     session_start();
-    if (array_key_exists('username', $_POST) OR array_key_exists('email', $_POST) OR array_key_exists('password', $_POST)) {
-        $dbhost = 'localhost';
+    $cookie_name="loggedin";
+      $dbhost = 'localhost';
         $dbuser = 'root';
         $dbpass = '';
         $dbname = 'CorporateClean'; 
@@ -26,9 +26,40 @@
             echo '<script type="text/javascript">'; 
             echo 'console.log("'.$error.'");'; 
             echo '</script>';
-        }    
+        }   
+
+       if (isset($_POST['login'])){
+         $user =$_POST['usernameL'];
+         $pass= $_POST["passwordL"];
+         $hashPass = hash('sha512',$pass);
+
+       $sql = "SELECT * 
+                FROM Users 
+                WHERE (username='$user' AND password='$hashPass');";
+                $res = mysqli_query($conn,$sql);
+        
+         if(mysqli_num_rows($res)>0){
+
+             $cookie_value= $user;
+             setcookie($cookie_name,$cookie_value,time()+(180),"/");
+             header("Location:login.php");
+         }
+         else{
+
+             echo "Username or password is incorrect";
+         }
 
 
+
+     }
+
+
+
+    if (array_key_exists('username', $_POST) OR array_key_exists('email', $_POST) OR array_key_exists('password', $_POST)) {
+      
+
+      
+        
         if ($_POST['email'] == '') {
             echo '<script type="text/javascript">'; 
             echo 'alert("Email address is required.");'; 
@@ -199,10 +230,10 @@
                     <p>Enter your username:</p>
                     <input name="usernameL" type="text" placeholder="Username" id="box"><br>
                     
-                    <p>Change your password:</p>
+                    <p>Enter your password:</p>
                     <input name="passwordL" type="password" placeholder="Password" id="box"><br>
                     <br>
-                    <input type="submit" id="submit" value = "Log in">
+                    <input type="submit" id="submit" name="login" value = "Log in">
                 </form>
             </div>
         </div>
