@@ -518,7 +518,23 @@ echo $s->get_name();
                     <h2>From The Blog</h2>
                     <nav>
                         <ul>
-                            <li><strong>Blog Post Title</strong></li>
+                                              
+							<?php
+class B {
+  public $name;
+ // public $color;
+
+  function __construct($name) {
+    $this->name = $name;
+  }
+  function __destruct() {
+    echo "Blog Post {$this->name}.";
+  }
+}
+
+$b = new B("Title");
+?>
+   
                             <li>Posted by Admin on 03.01.2020</li>
                             <li>
                                 <p>Cleanliness must be observed in a learning envionment. Clean environment</p>
