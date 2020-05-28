@@ -38,10 +38,54 @@
             $res = mysqli_query($conn,$sql);
             
             if(mysqli_num_rows($res)>0){
-                /** Cookie creation */
+
+                $id = "SELECT id FROM Users WHERE username = '$user';";
+                $resId = mysqli_query($conn, $id);
+                if ($row = mysqli_fetch_assoc($resId)) { $id = $row["id"]; }
+
+                $em = "SELECT email FROM Users WHERE username = '$user';";
+                $resEm = mysqli_query($conn, $em);
+                if ($row = mysqli_fetch_assoc($resEm)) { $em = $row["email"]; }
+
+                if(isset($_POST['edit'])){
+                    echo $em;
+                    $editUs = $_POST["usernameC"];
+                    $editEm = $_POST["emailC"];
+                    $editPass = hash('sha512',$_POST["passwordC"]);
+                    if($user != $editUs){
+                        $updUsername = "UPDATE users
+                                        SET username = $editUs
+                                        WHERE id = $id";
+                        echo '<p>Username has been updated!!!</p>';
+                    }
+                    if($em != $editEm){
+                        $updUsername = "UPDATE users
+                                        SET email = $editEm
+                                        WHERE id = $id";
+                        echo '<p>Email has been updated!!!</p>';
+                    }
+                    if($hashPass != $editPass){
+                        $updUsername = "UPDATE users
+                                        SET password = $editPass
+                                        WHERE id = $id";
+                        echo '<p>Password has been updated!!!</p>';
+                    }
+                }
+                
+                if(!empty($_POST["remember"])) {
+                    setcookie ("usernameL",$_POST["usernameL"],time()+ 3600);
+                    setcookie ("passwordL",$_POST["passwordL"],time()+ 3600);
+                    echo '<p>Login data are remembered</p>';
+                } else {
+                    setcookie("usernameL","");
+                    setcookie("passwordL","");
+                    echo '<p>Login data are not remembered</p>';
+                } 
+
                 $cookie_value =  $user;
                 $cookie_name = "loggedin";
-                setcookie($cookie_name, $cookie_value, time()+(1800),"/");
+                /** Cookie creation */
+                setcookie($cookie_name, $cookie_value, time()+(180),"/");
 
                 if(isset($_COOKIE[$cookie_name])){
                     $cookie_value = $_COOKIE[$cookie_name];
@@ -119,6 +163,7 @@
     }
 
 ?>
+
 
 <html>
     <head>
@@ -218,20 +263,22 @@
                     <p>Change your password:</p>
                     <input name="passwordC" type="password" placeholder="Password" id="box"><br>
                     <br>
-                    <input type="submit" id="submit" value = "Edit data">
+                    <input type="submit" name="edit" id="submit" value = "Edit data">
                 </form>
             </div>
             <div id="login">
                 <h1>Log in form</h1>
                 <form method = "post">
                     <p>Enter your username:</p>
-                    <input name="usernameL" type="text" placeholder="Username" id="box"><br>
+                    <input name="usernameL" type="text" placeholder="Username" id="box" value="<?php if(isset($_COOKIE["usernameL"])) { echo $_COOKIE["usernameL"]; } ?>"><br>
                     
                     <p>Enter your password:</p>
-                    <input name="passwordL" type="password" placeholder="Password" id="box"><br>
+                    <input name="passwordL" type="password" placeholder="Password" id="box" value="<?php if(isset($_COOKIE["password"])) { echo $_COOKIE["password"]; } ?>"><br>
                     <br>
+                    <p>Remember me<input type="checkbox" name="remember" style="display:inline;"></p>
                     <input type="submit" id="submit" name="login" value = "Log in">
                 </form>
+
             </div>
         </div>
         <span id="loged"></span>
