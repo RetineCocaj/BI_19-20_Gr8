@@ -252,6 +252,7 @@
             </ul>
 
             <div id="timerBackground">
+		     <?php include 'error.php';?>  
                 <p>Change the background with in a limit time</p>
                 <span id="countdown" class="timer"></span>
 
