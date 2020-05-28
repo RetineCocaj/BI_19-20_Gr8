@@ -1,3 +1,10 @@
+ 
+<?php
+     session_start();  #start a session
+
+    if ( !isset( $_SESSION['count'] ) ) 
+     $_SESSION['count'] = 1; else $_SESSION['count']++;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <html lang="en" manifest="manifest.appcache">
@@ -112,6 +119,12 @@
 		</svg>
             <h2 id="ranked">We are ranked with 5 stars by every costumer.</h2>
 
+        </div>
+        <div>
+        
+        <h2 style="margin-left:320px; color:lightblue;">You have visited this page <?php echo( $_SESSION['count'] ); ?> times in this session.</h2>
+
+        
         </div>
 
         <div class="included">
