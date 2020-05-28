@@ -220,22 +220,20 @@
                 and we have built a reputation for our reliability. The result is an offering with an extensive range of specialist services that is 
                 guaranteed to leave you with a job well done.                                                                 ';
                 $len = strlen($text);
-                printf($text.'<br><br><br>Length of text with spaces on sides: '.$len); 
+                printf('<p>'.$text.'<br><br><br>Length of text with spaces on sides: '.$len.'.</p>'); 
                 $len = strlen(trim($text," "));
-                printf('<br>Length of text after trim: '.$len); 
-                echo '<br><br>';
+                printf('<p>Length of text after trim: '.$len.'.</p>'); 
 
                 $str = "Frequently Asked Questions";
                 $exp = explode(" ", $str);
                 $i=0;
                 $sub=array();
 
-                
                 while($i < 3){
                     array_push($sub, substr($exp[$i++],0,1));
                 }
                 $imp = implode(".", $sub);
-                printf($str.' a.k.a '.$imp.'.');
+                printf('<p>'.$str.' a.k.a '.$imp.'.</p>');
             ?>
 
         </div>

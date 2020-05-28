@@ -16,7 +16,7 @@ $sqlQuery = "CREATE TABLE IF NOT EXISTS Employees (
     service_name VARCHAR(30) NOT NULL)";
 
 if ($conn->query($sqlQuery) === TRUE) {
-    echo '<h1>Table created successfully!<h1>';
+    echo '<h1>Table created successfully!</h1>';
 } else {
     echo "Error creating SQL table: " . $conn->error;
 }
