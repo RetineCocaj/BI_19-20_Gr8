@@ -305,8 +305,11 @@ class Blog {
   }
 }
 
-$post = new Blog("<strong>&nbsp;&nbsp;&nbsp;Blog Post Title</strong>");
+$post = new Blog("<strong>&nbsp;&nbsp;&nbsp;&nbsp;Blog Post Title</strong>");
 echo $post->get_name();
+
+$posted = array("Posted", "by Admin", "on 03.01.2020"); 
+echo "</br> &nbsp;&nbsp;&nbsp;&nbsp;" . $posted[0] . ", " . $posted[1] . "  " . $posted[2] . ".";
 ?>
  
                             <li>Posted by Admin on 03.01.2020</li>
