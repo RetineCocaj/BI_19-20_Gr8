@@ -41,7 +41,7 @@
 						</ul> 
 				  </li>  
 				  
-                  <li> <a href="#">Link text</a></li>
+                  <li> <a href="signup.php">User Login</a></li>
 
                         <li> <a href="#">Link text</a></li>
 
