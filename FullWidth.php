@@ -126,7 +126,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             
             if (mail($emailTo, $contactName, $businessName ,$headers)) {
                 
-                $successMessage = '<div class="alert alert-success" role="alert">Your message was sent, we\'ll get back to you ASAP!</div>';
+                $successMessage = '<div class="alert alert-success" role="alert">Thank you, '.$contactName.'. Your message was sent, we\'ll get back to you ASAP!</div>';
                 
                 
             } else {
@@ -297,7 +297,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </p>
 
             <table class="table_1">
-    <div id="error"><?php print( $error.$successMessage); ?></div>
+             <div id="error" style="text-align:center;  background-color: lightblue;
+                    opacity: 50%;"><?php print( $error.$successMessage); ?></div>
              
                 <form action="" autocomplete="on"  method="post">
 
@@ -368,7 +369,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 <label id="Phone">PhoneNumber <span class="field_required" style="color:#ee0000;">*</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Fax &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Email <span class="field_required" style="color:#ee0000;">*</span><br>
 					<input  placeholder="123-45-678" type="tel" name="phone"  required>
 					 <input  placeholder="123-45-678" type="tel" name="fax" >
-					<input type="email" name="title" id="title2" class="required hilightable" autocomplete="off" required></label>
+					<input type="email" name="email" id="title2" class="required hilightable" autocomplete="off" required></label>
                             </div>
                             <hr>
                         </td>
@@ -557,18 +558,18 @@ $t->intro();
                     <nav>
                     <form method="post">
                             <p><input id="nameinput" name="name" type="text" placeholder="Name"></p>
-                            <p><input id="email" name="email" type="text" placeholder="Email"></p>
+                            <p><input id="email" name="emaili" type="text" placeholder="Email"></p>
                             <p><textarea placeholder="Message" name="message" rows="3"></textarea></p>
-                            <p><input id="submit" type="submit" name="submit"></p>
+                            <p><input id="submit" type="submit" value="send" name="send"></p>
                         </form>
                         <?php
-                            if(isset($_POST['submit'])){
+                            if(isset($_POST['send'])){
                                 $name = $_POST["name"];
-                                $email = $_POST["email"];
+                                $emaili = $_POST["emaili"];
                                 $msg = $_POST["message"];
                                 $myfile = "contactMessages.txt";
                                 
-                                $txt = $name.' tried to contact the company, with email '.$email.', and message "'.$msg.'", at '.date("H:i:s d/m/Y.");
+                                $txt = $name.' tried to contact the company, with email '.$emaili.', and message "'.$msg.'", at '.date("H:i:s d/m/Y.");
                                 $line = '=======================================================================================================================';
                                 file_put_contents($myfile, $txt. "\r\n".$line."\r\n", FILE_APPEND);
 
