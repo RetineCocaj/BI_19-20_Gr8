@@ -32,17 +32,17 @@
         <div class="nav">
             <ul>
 
-                <li> <a href="HomePage.php">Homepage</a></li>
+                <li> <a href="HomePage.html">Homepage</a></li>
 
-                <li> <a href="StyleDemo.php">Our Company</a></li>
+                <li> <a href="StyleDemo.html">Our Company</a></li>
 
-                <li> <a href="FullWidth.php">Book Now</a></li>
+                <li> <a href="FullWidth.html">Book Now</a></li>
 
-                <li> <a href="Gallery.php">Gallery</a></li>
+                <li> <a href="Gallery.html">Gallery</a></li>
 
                 <li> <a href="#">About Us</a>
                     <ul>
-                        <li><a href="AboutUs.php">&emsp;Service</li>
+                        <li><a href="AboutUs.html">&emsp;Service</li>
 						<li><a href="#">Safety</li>
 						<li><a href="#">Area</li>
 						</ul> 
@@ -314,34 +314,19 @@
                     <h2>Contact Details</h2>
                     <nav>
                         <ul>
-						<?php
-						function ContactDetails($Cname)
-						{
-						echo "$Cname<br>";
-						}
-						ContactDetails("Company: Corporate Clean");
-						// case-sensitive constant name
-						define("A", "Address: xxxxxxxx");
-						echo A;
-
-						echo "</br>";
-						ContactDetails("Street name&amp; Number");
-						ContactDetails("Town: Shqip&#xEB;ri");
-						echo str_replace("Town", "Postcode/Zip:", "Town");
-
-						echo "</br>";
-						ContactDetails("</br>Tel:xxxxxx");
-						ContactDetails("Fax:xxxxxx");
-						ContactDetails("Email:<a href=mailto:>contact@mydomail.com</a>");
-						echo "</br>";
-						ContactDetails("<strong>Office Hours</strong>");
-						ContactDetails("Monday- Friday :08:00-17:30");
-						ContactDetails("Saturday: 08-13:00");
-						echo str_word_count("Saturday: 08-13:00  ");
-						echo strrev("Address  ");
-
-						?>
-					</ul>
+                            <li>Company: Corporate Clean</li>
+                            <li>Street name&amp; Number</li>
+                            <li>Town: Shqip&#xEB;ri</li>
+                            <li>Postcode/Zip</li>
+                            <li><br> </li>
+                            <li>Tel:xxxxxx</li>
+                            <li>Fax:xxxxxx</li>
+                            <li>Email:<a href=mailto:>contact@mydomail.com</a> </li>
+                            <br>
+                            <li><strong>Office Hours</strong></li>
+                            <li>Monday- Friday :08:00-17:30</li>
+                            <li>Saturday: 08-13:00</li>
+                        </ul>
                     </nav>
 
                 </section>

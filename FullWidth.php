@@ -457,18 +457,18 @@ $city=$_POST['city'];
 $tel=$_POST['phone'];
 
 $sqlQuery = "INSERT INTO Bookings (contactName,managementComp,businessName,propAddress,city,tel)
-          VALUES('$contactName','$managementComp','$businessName','$propAddr','$city','$tel')";
+            VALUES('$contactName','$managementComp','$businessName','$propAddr','$city','$tel')";
 
 if ($conn->query($sqlQuery) === TRUE) {
     echo '<script type="text/javascript">'; 
     echo 'alert("Data successfully saved");'; 
     echo '</script>';  
-  } else {
-    $error = 'Error: ' . $sql . $conn->error;
+} else {
+    $error = 'Error: ' . $sqlQuery . $conn->error;
     echo '<script type="text/javascript">'; 
     echo 'alert("'.$error.'");'; 
     echo '</script>'; 
-  }
+}
 
 $conn->close();
 }
