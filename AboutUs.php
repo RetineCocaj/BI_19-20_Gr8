@@ -515,7 +515,7 @@ echo $s->get_name();
                 </section>
 
                 <section class="block" id="block3">
-                    <h2>From The Blog</h2>
+                    <h2 id="destructEl">From The Blog</h2>
                     <nav>
                         <ul>
                                               
@@ -528,13 +528,14 @@ class B {
     $this->name = $name;
   }
   function __destruct() {
-    echo "Blog Post {$this->name}.";
+    $str="Blog Post {$this->name}.....";
+    echo '<script>document.getElementById("destructEl").innerHTML = "'.$str.'"</script>';
   }
 }
 
-$b = new B("Title");
+$b = new B("Destruct");
 ?>
-   
+   			<li><strong>Blog Post Title</strong></li>
                             <li>Posted by Admin on 03.01.2020</li>
                             <li>
                                 <p>Cleanliness must be observed in a learning envionment. Clean environment</p>
