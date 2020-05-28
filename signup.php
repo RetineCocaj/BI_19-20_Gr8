@@ -156,7 +156,7 @@
                 border-radius: 5px;
                 padding: 5px;
                 width:300px;
-                height:35px;
+                height:40px;
             }
             #signup, #edit, #login{
                 display:inline-block;
@@ -165,7 +165,7 @@
 
             #login{margin-left:40%;}
             #login{bottom:250px;}
-            #submit{width:80%;}
+            #submit{width:80%;height:40px;}
             
         </style>
     </head>
