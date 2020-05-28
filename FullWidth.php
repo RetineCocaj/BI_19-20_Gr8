@@ -145,7 +145,7 @@
             </p>
 
             <table class="table_1">
-                <form action="" autocomplete="on" onsubmit="return validate()" method="post">
+                <form action="validation.php" autocomplete="on"  method="post">
 
                     <tr>
                         <td>
@@ -266,7 +266,7 @@
                     <tr>
                         <td>
 
-                            <p><input id="submit" name="submit" type="submit" onclick="check()"></p>
+                            <p><input id="submit" name="submit" type="submit"></p>
                         </td>
                     </tr>
                 </form>
