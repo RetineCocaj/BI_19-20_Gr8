@@ -38,40 +38,13 @@
             $res = mysqli_query($conn,$sql);
             
             if(mysqli_num_rows($res)>0){
-
-                $id = "SELECT id FROM Users WHERE username = '$user';";
-                $resId = mysqli_query($conn, $id);
-                if ($row = mysqli_fetch_assoc($resId)) { $id = $row["id"]; }
-
-                $em = "SELECT email FROM Users WHERE username = '$user';";
-                $resEm = mysqli_query($conn, $em);
-                if ($row = mysqli_fetch_assoc($resEm)) { $em = $row["email"]; }
-
-                if(isset($_POST['edit'])){
-                    echo $em;
-                    $editUs = $_POST["usernameC"];
-                    $editEm = $_POST["emailC"];
-                    $editPass = hash('sha512',$_POST["passwordC"]);
-                    if($user != $editUs){
-                        $updUsername = "UPDATE users
-                                        SET username = $editUs
-                                        WHERE id = $id";
-                        echo '<p>Username has been updated!!!</p>';
-                    }
-                    if($em != $editEm){
-                        $updUsername = "UPDATE users
-                                        SET email = $editEm
-                                        WHERE id = $id";
-                        echo '<p>Email has been updated!!!</p>';
-                    }
-                    if($hashPass != $editPass){
-                        $updUsername = "UPDATE users
-                                        SET password = $editPass
-                                        WHERE id = $id";
-                        echo '<p>Password has been updated!!!</p>';
-                    }
-                }
                 
+
+                $cookie_value =  $user;
+                $cookie_name = "loggedin";
+                /** Cookie creation */
+                setcookie($cookie_name, $cookie_value, time()+(180),"/");
+
                 if(!empty($_POST["remember"])) {
                     setcookie ("usernameL",$_POST["usernameL"],time()+ 3600);
                     setcookie ("passwordL",$_POST["passwordL"],time()+ 3600);
@@ -81,11 +54,6 @@
                     setcookie("passwordL","");
                     echo '<p>Login data are not remembered</p>';
                 } 
-
-                $cookie_value =  $user;
-                $cookie_name = "loggedin";
-                /** Cookie creation */
-                setcookie($cookie_name, $cookie_value, time()+(180),"/");
 
                 if(isset($_COOKIE[$cookie_name])){
                     $cookie_value = $_COOKIE[$cookie_name];
@@ -187,17 +155,17 @@
             #box{
                 border-radius: 5px;
                 padding: 5px;
-                width:100%;
-                height:35px;
+                width:300px;
+                height:40px;
             }
             #signup, #edit, #login{
                 display:inline-block;
                 margin: 0px 20px;
             }
 
-            #edit,#login{margin-left:20%;}
+            #login{margin-left:40%;}
             #login{bottom:250px;}
-            #submit{width:80%;}
+            #submit{width:80%;height:40px;}
             
         </style>
     </head>
@@ -249,21 +217,6 @@
                     <input name="password" type="password" placeholder="Password" id="box"><br>
                     <br>
                     <input type="submit" id="submit"  value = "Sign up">
-                </form>
-            </div>
-            <div id="edit">
-                <h1>Edit data form</h1>
-                <form method = "post">
-                    <p>Change your username:</p>
-                    <input name="usernameC" type="text" placeholder="Username" id="box"><br>
-                    
-                    <p>Change your email address:</p>
-                    <input name="emailC" type="text" placeholder="Email address" id="box"><br>
-                    
-                    <p>Change your password:</p>
-                    <input name="passwordC" type="password" placeholder="Password" id="box"><br>
-                    <br>
-                    <input type="submit" name="edit" id="submit" value = "Edit data">
                 </form>
             </div>
             <div id="login">
