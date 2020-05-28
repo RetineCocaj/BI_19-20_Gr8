@@ -18,22 +18,31 @@
             password VARCHAR(10000) NOT NULL)";
 
         if ($conn->query($sqlQuery) === TRUE) {
-            echo '<p>Table created successfully!</p>';
+            echo '<script type="text/javascript">'; 
+            echo 'console.log("Table created successfully!");'; 
+            echo '</script>';
         } else {
-            echo "Error creating SQL table: " . $conn->error;
+            $error = 'Error creating SQL table: ' . $conn->error;
+            echo '<script type="text/javascript">'; 
+            echo 'console.log("'.$error.'");'; 
+            echo '</script>';
         }    
 
 
         if ($_POST['email'] == '') {
-            
-            echo "<p>Email address is required.</p>";
+            echo '<script type="text/javascript">'; 
+            echo 'alert("Email address is required.");'; 
+            echo '</script>';
             
         } else if ($_POST['password'] == '') {
+            echo '<script type="text/javascript">'; 
+            echo 'alert("Password is required.");'; 
+            echo '</script>';
             
-            echo "<p>Password is required.</p>";
         } else if ($_POST['username'] == '') {
-            
-            echo "<p>Username is required.</p>";
+            echo '<script type="text/javascript">'; 
+            echo 'alert("Username is required.");'; 
+            echo '</script>';
         
         } else{
             $username = $_POST['username'];
@@ -52,9 +61,13 @@
             $resEm = mysqli_query($conn,$sqlEm);
 
             if (mysqli_num_rows($resUs) > 0) {
-                echo "<p>A user with this username already exists. Please try another.</p>";
+                echo '<script type="text/javascript">'; 
+                echo 'alert("A user with this username already exists. Please try another.");'; 
+                echo '</script>'; 
             } else if(mysqli_num_rows($resEm) > 0){
-                echo "<p>A user with this email already exists. Please try another.</p>";
+                echo '<script type="text/javascript">'; 
+                echo 'alert("A user with this email already exists. Please try another.");'; 
+                echo '</script>'; 
             } else{
                 $query = "INSERT INTO Users (username, email, password) VALUES('$username','$email','$hashPass')";
 
