@@ -24,7 +24,7 @@
     <div class="Margin">
         <div id="mydiv">CorporateClean</div>
         <header>
-            <span> Free PSD Website Template &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <span id="hello"> Free PSD Website Template &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 		Call Us: xxxxx xxxxxxxxxx  &emsp;&emsp;&emsp;&emsp; Email Us: contact@mydomain.com</span>
         </header>
@@ -32,17 +32,17 @@
         <div class="nav">
             <ul>
 
-                <li> <a href="HomePage.html">Homepage</a></li>
+                <li> <a href="HomePage.php">Homepage</a></li>
 
-                <li> <a href="StyleDemo.html">Our Company</a></li>
+                <li> <a href="StyleDemo.php">Our Company</a></li>
 
-                <li> <a href="FullWidth.html">Book Now</a></li>
+                <li> <a href="FullWidth.php">Book Now</a></li>
 
-                <li> <a href="Gallery.html">Gallery</a></li>
+                <li> <a href="Gallery.php">Gallery</a></li>
 
                 <li> <a href="#">About Us</a>
                     <ul>
-                        <li><a href="AboutUs.html">&emsp;Service</li>
+                        <li><a href="AboutUs.php">&emsp;Service</li>
 						<li><a href="#">Safety</li>
 						<li><a href="#">Area</li>
 						</ul> 

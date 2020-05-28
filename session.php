@@ -6,8 +6,7 @@
         
         echo '<script> alert("You are logged in!");</script>';
         echo "<script>window.location.href = 'HomePage.php';</script>";
-        
-    } else {
+   } else {
         
         header("Location: signup.php");
         
