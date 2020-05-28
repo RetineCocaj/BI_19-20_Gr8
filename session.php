@@ -4,11 +4,12 @@
     
     if ($_SESSION['email']) {
         
-        echo "You are logged in!";
+        echo '<script> alert("You are logged in!");</script>';
+        echo "<script>window.location.href = 'HomePage.php';</script>";
         
     } else {
         
-        header("Location: index.php");
+        header("Location: signup.php");
         
     }
 ?>
