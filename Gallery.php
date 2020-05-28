@@ -49,7 +49,21 @@
 
 
         </div>
-        <p id="date">Date: <span id="datetime"></span></p>
+        <p id="date">Date: 
+            <span id="datetime"></span><br>
+            <span id="time"></span>
+            <?php
+                $time = (int)date("h");
+                $str = "Good evening visitors!!!";
+                if($time >=5 && $time < 12){
+                    $str = str_replace("evening", "morning", $str);            
+                }
+                else if($time >=12 && $time < 18){
+                    $str = str_replace("evening", "afternoon", $str);
+                }
+                echo '<script>document.getElementById("time").innerHTML="'.$str.'";</script>';
+            ?>
+        </p>
         <div class="permbajtja">
             <span>It's as easy as 1-2-3.</span>
         </div>
