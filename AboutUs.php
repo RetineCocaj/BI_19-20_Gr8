@@ -259,7 +259,28 @@
             <p id="uri_result"></p>
             <p>The number of our income this year has reached:
                 <p id="num"><button id="floor" onclick="floor()">Floor</button>3876985.548<button id="ceil" onclick="ceil()">Ceil</button></p>
-                <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+                <?php
+//create function with an exception
+function checkNum($number) {
+  if($number>1) {
+    throw new Exception("Value must be 1 or below");
+  }
+  return true;
+}
+
+//trigger exception in a "try" block
+try {
+  checkNum(2);
+  //If the exception is thrown, this text will not be shown
+  echo 'If you see this, the number is 1 or below';
+}
+
+//catch exception
+catch(Exception $e) {
+  echo 'Message: ' .$e->getMessage();
+}
+?>
+		<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
                     <input type="range" id="a" value="50">100 <br>&emsp;+&emsp;
                     <input style="background-color:skyblue" type="number1" id="b" value="50"> =
                     <output name="x" for="a b"></output>
