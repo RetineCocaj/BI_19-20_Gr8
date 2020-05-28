@@ -211,16 +211,31 @@
         <div class="multicolumn">
             <h2 id="multicolumn"></h2>
             <?php
-                $text='We recognise the importance of having a perfectly clean environment 
+                $text='                       We recognise the importance of having a perfectly clean environment 
                 as this can influence your customers’ perception of your business and brand. We have extensive experience in delivering high-quality 
                 contract cleaning services in a diverse range of commercial environments. The same is true of the domestic environment and we strive to 
                 help keep your home in immaculate condition. Using our specialist knowledge and experience, we help our clients considerably improve the 
                 standard of cleanliness in their home or work environment. Our primary concern is to give all our current and potential customers a competitive
                 price and sought-after services that anyone would recommend. We have become a highly respected cleaning company across the areas we serve 
                 and we have built a reputation for our reliability. The result is an offering with an extensive range of specialist services that is 
-                guaranteed to leave you with a job well done.';
+                guaranteed to leave you with a job well done.                                                                 ';
                 $len = strlen($text);
-                echo $text.'<br><br><br>Length of this text: '.$len; 
+                printf($text.'<br><br><br>Length of text with spaces on sides: '.$len); 
+                $len = strlen(trim($text," "));
+                printf('<br>Length of text after trim: '.$len); 
+                echo '<br><br>';
+
+                $str = "Frequently Asked Questions";
+                $exp = explode(" ", $str);
+                $i=0;
+                $sub=array();
+
+                
+                while($i < 3){
+                    array_push($sub, substr($exp[$i++],0,1));
+                }
+                $imp = implode(".", $sub);
+                printf($str.' a.k.a '.$imp.'.');
             ?>
 
         </div>
