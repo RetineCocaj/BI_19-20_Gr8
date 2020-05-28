@@ -263,13 +263,18 @@
                     <input type="range" id="a" value="50">100 <br>&emsp;+&emsp;
                     <input style="background-color:skyblue" type="number1" id="b" value="50"> =
                     <output name="x" for="a b"></output>
-			<?php
-					if(file_exists("mytestfile.txt")) {
-					$file = fopen("mytestfile.txt", "r");
-					} else {
-					die("</br>Error: The file does not exist.");
-					}
-					?>
+					<?php
+//error handler function
+function customError($errno, $errstr) {
+  echo "</br><b>Error:</b> [$errno] $errstr";
+}
+
+//set error handler
+set_error_handler("customError");
+
+//trigger error
+echo($test);
+?>
                 </form>
 
         </div>
